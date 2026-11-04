@@ -511,3 +511,36 @@ main section[id]{scroll-margin-top:72px;}
 @media (max-width: 600px){ .legal{padding:120px 16px 70px;} }
 .site-footer p a{color:var(--cream-dim);border-bottom:1px solid var(--line);transition:color .2s ease,border-color .2s ease;}
 .site-footer p a:hover{color:var(--cream);border-color:var(--red);}
+/* Título de portada en tres líneas: algo más pequeño para que quepa con el resto */
+.hero-title{font-size:clamp(3rem,min(8.4vw,11.5svh),7rem);}
+
+/* ---------- Equipo: fichas horizontales con la foto pequeña ----------
+   Así "Quiénes somos" y la franja de producciones caben en la misma pantalla. */
+.member{
+  aspect-ratio:auto;display:grid;grid-template-columns:200px 1fr;
+  background:var(--bg-alt);border:1px solid var(--line);
+}
+.member::after{display:none;}
+.member img{position:static;width:100%;height:100%;min-height:250px;aspect-ratio:auto;object-position:center 20%;}
+.member-info{position:static;display:flex;flex-direction:column;padding:26px 26px 24px;}
+.member-info h3{font-size:clamp(2rem,3vw,2.6rem);margin:4px 0 10px;}
+.member-info p{font-size:0.9rem;}
+.member-info .text-links{margin-top:auto;padding-top:14px;}
+#equipo{padding-bottom:clamp(40px,6vh,64px);}
+@media (max-width: 960px){
+  .team{grid-template-columns:1fr;}
+  .member img{aspect-ratio:auto;height:100%;}
+}
+@media (max-width: 600px){
+  .member{grid-template-columns:110px 1fr;}
+  .member img{min-height:0;height:100%;}
+  .member-info{padding:16px 16px 16px;}
+  .member-info h3{font-size:1.9rem;margin:2px 0 6px;}
+  .member-info p{font-size:0.84rem;line-height:1.5;}
+  .member-info .text-links{padding-top:10px;}
+}
+@media (min-width: 601px) and (max-width: 960px){
+  .member{grid-template-columns:170px 1fr;}
+  .member img{min-height:200px;}
+  .member-info{padding:20px 22px;}
+}
