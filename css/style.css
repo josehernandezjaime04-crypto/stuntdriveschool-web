@@ -387,3 +387,75 @@ em{font-style:normal;color:var(--red);}
   .pl-tag{display:none;}
   .contact-grid.cols-3{grid-template-columns:1fr;}
 }
+
+/* ---------- Ajustes de texto y maquetación ---------- */
+p,li,dd{text-wrap:pretty;}
+h1,h2,h3,.lead{text-wrap:balance;}
+main section[id]{scroll-margin-top:72px;}
+.section-tight{padding-top:clamp(24px,4vh,48px);}
+#prensa{padding-bottom:clamp(56px,9vh,100px);}
+
+/* Eyebrow del hero en dos líneas fijas: nunca se parte a media frase */
+.eyebrow span{display:block;}
+.eyebrow span + span{margin-top:4px;}
+
+/* Lista de precios: columnas fijas y todo centrado en vertical */
+.price-list li{align-items:center;}
+.pl-tag{flex:0 0 72px;min-width:0;}
+.pl-name{line-height:1.35;}
+.pl-name span{margin-top:2px;}
+.pl-price{line-height:1;}
+.course-cols h3{flex-wrap:wrap;row-gap:2px;}
+
+/* Bloque de fecha */
+.event-date{min-width:150px;}
+.event-date b{font-size:2.1rem;line-height:0.95;margin-top:6px;}
+
+/* Prensa */
+.press{align-items:center;}
+.press-source{line-height:1;}
+.press-source small{margin-bottom:6px;}
+
+@media (max-width: 960px){
+  .section-tight{padding-top:24px;}
+}
+@media (max-width: 600px){
+  .hero-ctas .btn{flex:1 1 100%;justify-content:center;}
+
+  /* En móvil la etiqueta (coche/moto/combo) va encima del nombre, no se oculta */
+  .price-list li{display:grid;grid-template-columns:1fr auto;column-gap:14px;row-gap:2px;padding:14px 0;}
+  .pl-tag{display:block;grid-column:1;grid-row:1;}
+  .pl-name{grid-column:1;grid-row:2;}
+  .pl-price{grid-column:2;grid-row:1 / span 2;}
+  .price-list li:hover{padding-left:0;}
+
+  /* Equipo: el texto va debajo de la foto para no taparle la cara */
+  .member{aspect-ratio:auto;display:flex;flex-direction:column;background:var(--bg-alt);border:1px solid var(--line);}
+  .member img{position:static;aspect-ratio:4/4.2;height:auto;}
+  .member::after{display:none;}
+  .member-info{position:static;padding:22px 20px 24px;}
+
+  .event-date{min-width:0;padding:14px 18px;}
+
+  /* Contacto compacto: etiqueta a la izquierda, dato a la derecha */
+  .contact-item{flex-direction:row;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;text-align:right;}
+  .contact-item span{text-align:left;flex-shrink:0;}
+  .contact-address{text-wrap:balance;}
+}
+@media (min-width: 601px) and (max-width: 960px){
+  .event .btn{grid-column:2;}
+}
+@media (max-width: 600px){
+  .event .btn{grid-column:1;}
+}
+/* Tablet: igual que en móvil, el texto del equipo va debajo de la foto */
+@media (max-width: 960px){
+  .member{aspect-ratio:auto;display:flex;flex-direction:column;background:var(--bg-alt);border:1px solid var(--line);}
+  .member img{position:static;aspect-ratio:4/4.2;height:auto;}
+  .member::after{display:none;}
+  .member-info{position:static;padding:22px 20px 24px;}
+}
+@media (max-width: 960px){
+  .member-info{flex:1;display:flex;flex-direction:column;}
+  .member-info .text-links{margin-top:auto;padding-top:14px;}
+}
