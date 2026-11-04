@@ -123,11 +123,15 @@
 
       btn.disabled = true;
       aviso('Enviando…');
+      // si el servidor no contesta en 15 s, se corta y se ofrece WhatsApp en vez de quedarse esperando
+      const corte = new AbortController();
+      const reloj = setTimeout(() => corte.abort(), 15000);
       try {
         const r = await fetch(form.dataset.api, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(datos)
+          body: JSON.stringify(datos),
+          signal: corte.signal
         });
         const res = await r.json().catch(() => ({}));
         if (r.ok && res.ok) {
@@ -140,6 +144,7 @@
       } catch (e) {
         aviso('Ahora mismo no podemos guardar tu solicitud. Escríbenos por WhatsApp al 633 06 36 57.', 'error');
       } finally {
+        clearTimeout(reloj);
         btn.disabled = false;
         if (window.turnstile && widget !== null) window.turnstile.reset(widget);
       }
