@@ -544,3 +544,31 @@ main section[id]{scroll-margin-top:72px;}
   .member img{min-height:200px;}
   .member-info{padding:20px 22px;}
 }
+
+/* Logo de cabecera más grande (petición de José, 2026-11-04) */
+.logo-img{height:112px;}
+.site-header.scrolled .logo-img{height:70px;}
+.hero{padding-top:190px;}
+@media (max-width: 1240px){
+  .logo-img{height:96px;}
+  .site-header.scrolled .logo-img{height:62px;}
+}
+@media (max-width: 600px){
+  .logo-img{height:66px;}
+  .site-header.scrolled .logo-img{height:50px;}
+  .hero{padding-top:140px;}
+}
+/* Con el logo grande no caben logo + menú + botón: el botón (igual que Contacto) solo en pantallas anchas */
+@media (max-width: 1500px){
+  .header-actions .btn-small{display:none;}
+}
+@media (max-width: 1100px){
+  .logo-img{height:80px;}
+  .site-header.scrolled .logo-img{height:58px;}
+}
+@media (min-width: 901px) and (max-width: 1000px){
+  .logo-img{height:72px;}
+  .main-nav{gap:16px;}
+  .main-nav a{font-size:0.7rem;letter-spacing:0.06em;}
+}
+.logo-link{flex-shrink:0;}
