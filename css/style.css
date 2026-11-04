@@ -509,3 +509,5 @@ main section[id]{scroll-margin-top:72px;}
 .legal strong{color:var(--cream);font-weight:600;}
 .legal a{color:var(--cream);border-bottom:1px solid var(--red);}
 @media (max-width: 600px){ .legal{padding:120px 16px 70px;} }
+.site-footer p a{color:var(--cream-dim);border-bottom:1px solid var(--line);transition:color .2s ease,border-color .2s ease;}
+.site-footer p a:hover{color:var(--cream);border-color:var(--red);}
