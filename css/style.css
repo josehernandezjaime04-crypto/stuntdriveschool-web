@@ -301,11 +301,11 @@ em{font-style:normal;color:var(--red);}
    ========================================================= */
 /* Logo horizontal: más bajo que el escudo de creationsFX */
 .logo-link{height:auto;align-items:center;}
-.logo-img{height:60px;filter:none;}
+.logo-img{height:84px;filter:none;}
 .site-header.scrolled .logo-link{height:auto;}
-.site-header.scrolled .logo-img{height:46px;}
+.site-header.scrolled .logo-img{height:56px;}
 .logo-link:hover .logo-img{transform:scale(1.03);filter:drop-shadow(0 0 14px rgba(255,106,0,0.45));}
-.hero{padding-top:140px;}
+.hero{padding-top:160px;}
 
 /* ---------- Pósters (casos de éxito) ---------- */
 .posters{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel);overflow:hidden;padding:22px 0;}
@@ -356,11 +356,6 @@ em{font-style:normal;color:var(--red);}
 .member-info p{font-size:0.92rem;color:var(--cream-dim);max-width:440px;}
 .member-info .text-links{margin-top:14px;}
 
-/* ---------- Prensa ---------- */
-.press{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:36px;padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
-.press-source{font-family:var(--ff-display);font-size:2rem;letter-spacing:0.04em;}
-.press-source small{display:block;font-family:var(--ff-body);font-size:0.66rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--red);}
-.press p{color:var(--cream-dim);font-size:0.95rem;max-width:640px;}
 
 /* ---------- Contacto (5 columnas + dirección) ---------- */
 .contact-grid.cols-3{grid-template-columns:repeat(3,1fr);}
@@ -371,12 +366,11 @@ em{font-style:normal;color:var(--red);}
   .course-cols{grid-template-columns:1fr;gap:48px;}
   .event{grid-template-columns:auto 1fr;gap:24px;padding:28px;}
   .event .btn{grid-column:1 / -1;justify-self:start;}
-  .press{grid-template-columns:1fr;gap:14px;}
   .contact-grid.cols-3{grid-template-columns:1fr 1fr;}
 }
 @media (max-width: 600px){
-  .logo-img{height:42px;}
-  .site-header.scrolled .logo-img{height:34px;}
+  .logo-img{height:54px;}
+  .site-header.scrolled .logo-img{height:42px;}
   .hero{padding-top:120px;}
   .posters-group img{height:140px;}
   .team{grid-template-columns:1fr;}
@@ -393,7 +387,6 @@ p,li,dd{text-wrap:pretty;}
 h1,h2,h3,.lead{text-wrap:balance;}
 main section[id]{scroll-margin-top:72px;}
 .section-tight{padding-top:clamp(24px,4vh,48px);}
-#prensa{padding-bottom:clamp(56px,9vh,100px);}
 
 /* Eyebrow del hero en dos líneas fijas: nunca se parte a media frase */
 .eyebrow span{display:block;}
@@ -411,10 +404,6 @@ main section[id]{scroll-margin-top:72px;}
 .event-date{min-width:150px;}
 .event-date b{font-size:2.1rem;line-height:0.95;margin-top:6px;}
 
-/* Prensa */
-.press{align-items:center;}
-.press-source{line-height:1;}
-.press-source small{margin-bottom:6px;}
 
 @media (max-width: 960px){
   .section-tight{padding-top:24px;}
