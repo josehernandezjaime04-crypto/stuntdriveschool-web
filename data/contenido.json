@@ -1,0 +1,240 @@
+{
+  "version": 1,
+  "cursos": [
+    {
+      "grupo": "genericos",
+      "tipo": "Coche",
+      "nombre": "Nivel 1",
+      "detalle": "",
+      "precio": 280
+    },
+    {
+      "grupo": "genericos",
+      "tipo": "Coche",
+      "nombre": "Nivel 2",
+      "detalle": "",
+      "precio": 290
+    },
+    {
+      "grupo": "genericos",
+      "tipo": "Coche",
+      "nombre": "Nivel 3",
+      "detalle": "",
+      "precio": 320
+    },
+    {
+      "grupo": "genericos",
+      "tipo": "Combo",
+      "nombre": "Niveles 1 y 2",
+      "detalle": "",
+      "precio": 550
+    },
+    {
+      "grupo": "genericos",
+      "tipo": "Combo",
+      "nombre": "Supercombo · niveles 1, 2 y 3",
+      "detalle": "",
+      "precio": 850
+    },
+    {
+      "grupo": "genericos",
+      "tipo": "Moto",
+      "nombre": "Nivel 1",
+      "detalle": "Con moto de la escuela",
+      "precio": 310
+    },
+    {
+      "grupo": "genericos",
+      "tipo": "Moto",
+      "nombre": "Nivel 1",
+      "detalle": "Con moto propia",
+      "precio": 250
+    },
+    {
+      "grupo": "especificos",
+      "tipo": "Coche",
+      "nombre": "Drift",
+      "detalle": "",
+      "precio": 370
+    },
+    {
+      "grupo": "especificos",
+      "tipo": "Coche",
+      "nombre": "Easy drift",
+      "detalle": "",
+      "precio": 350
+    },
+    {
+      "grupo": "especificos",
+      "tipo": "Coche",
+      "nombre": "Seguimiento de camera car",
+      "detalle": "",
+      "precio": 350
+    },
+    {
+      "grupo": "especificos",
+      "tipo": "Coche",
+      "nombre": "Dos ruedas",
+      "detalle": "",
+      "precio": 510
+    }
+  ],
+  "fechas": [
+    {
+      "titulo": "Moto · Nivel 1",
+      "fecha": "",
+      "descripcion": "Iniciación a la conducción de moto de precisión para cine: slaloms, salidas, derrapes y trazadas. Incluye moto adaptada, instalaciones y seguro de pista. Hay cascos, pero recomendamos traer el tuyo.",
+      "plazas": 10,
+      "reserva": 100,
+      "lugar": "FAST Parcmotor · Castellolí"
+    }
+  ],
+  "posters": [
+    {
+      "src": "assets/img/posters/p01.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p02.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p03.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p04.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p05.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p06.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p07.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p08.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p09.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p10.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p11.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p12.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p13.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p14.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p15.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p16.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p17.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p18.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p19.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p20.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p21.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p22.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p23.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p24.jpg",
+      "titulo": ""
+    },
+    {
+      "src": "assets/img/posters/p25.jpg",
+      "titulo": ""
+    }
+  ],
+  "galeria": [
+    {
+      "src": "assets/img/dos-ruedas.jpg",
+      "alt": "Coche negro levantado sobre dos ruedas",
+      "forma": "grande"
+    },
+    {
+      "src": "assets/img/precision-agua.jpg",
+      "alt": "Coche de la escuela frenando sobre pista mojada",
+      "forma": "ancha"
+    },
+    {
+      "src": "assets/img/drift.jpg",
+      "alt": "Deportivo derrapando en pista",
+      "forma": "normal"
+    },
+    {
+      "src": "assets/img/monitor.jpg",
+      "alt": "Monitor de cámara durante un plano de persecución",
+      "forma": "normal"
+    },
+    {
+      "src": "assets/img/camaracar.jpg",
+      "alt": "Camera car siguiendo a un coche en la pista",
+      "forma": "ancha"
+    },
+    {
+      "src": "assets/img/dos-ruedas-2.jpg",
+      "alt": "Coche sobre dos ruedas junto a un cono",
+      "forma": "ancha"
+    }
+  ],
+  "fotos": {
+    "portada": {
+      "v": ""
+    },
+    "curso": {
+      "v": ""
+    },
+    "oriol": {
+      "v": ""
+    },
+    "jordi": {
+      "v": ""
+    }
+  }
+}

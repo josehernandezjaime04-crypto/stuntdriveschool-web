@@ -151,5 +151,16 @@
     });
   }
 
+  // Dos toques seguidos en "Stunt Drive School" del pie abren el panel de administración
+  const marca = document.getElementById('pieMarca');
+  if (marca) {
+    let ultimoToque = 0;
+    marca.addEventListener('click', () => {
+      const ahora = Date.now();
+      if (ahora - ultimoToque < 450) window.location.href = marca.dataset.admin;
+      ultimoToque = ahora;
+    });
+  }
+
   document.getElementById('year').textContent = new Date().getFullYear();
 })();

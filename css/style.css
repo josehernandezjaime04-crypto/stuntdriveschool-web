@@ -572,3 +572,12 @@ main section[id]{scroll-margin-top:72px;}
   .main-nav a{font-size:0.7rem;letter-spacing:0.06em;}
 }
 .logo-link{flex-shrink:0;}
+
+/* ---------- Fechas generadas desde el panel ---------- */
+.event-date{line-height:1;text-transform:uppercase;}
+.event.event-empty{grid-template-columns:1fr auto;}
+.pie-marca{cursor:default;user-select:none;-webkit-user-select:none;}
+@media (max-width: 960px){
+  .event.event-empty{grid-template-columns:1fr;}
+  .event.event-empty .btn{grid-column:1;}
+}
