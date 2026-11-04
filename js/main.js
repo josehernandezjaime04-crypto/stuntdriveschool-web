@@ -151,6 +151,47 @@
     });
   }
 
+  // Carrusel "Así es un curso": pasa solo, se pausa fuera de pantalla y con el ratón encima
+  const show = document.getElementById('cursoSlideshow');
+  if (show) {
+    const slides = [...show.querySelectorAll('.slide')];
+    const bar = show.querySelector('.slide-progress');
+    const MS = 5000;
+    show.style.setProperty('--slide-ms', MS + 'ms');
+    bar.innerHTML = slides.map(() => '<span><i></i></span>').join('');
+    const segs = [...bar.children];
+    let cur = 0, timer = null, visible = false, hover = false;
+
+    function paint() {
+      slides.forEach((s, i) => s.classList.toggle('active', i === cur));
+      segs.forEach((g, i) => { g.classList.remove('run'); g.classList.toggle('done', i < cur); });
+      // precarga la siguiente
+      const nx = slides[(cur + 1) % slides.length]; if (nx.loading === 'lazy') nx.loading = 'eager';
+    }
+    function go(i) { cur = (i + slides.length) % slides.length; paint(); schedule(); }
+    function schedule() {
+      clearTimeout(timer);
+      if (!visible || hover || reduceMotion) return;
+      const g = segs[cur]; void g.offsetWidth; g.classList.add('run');
+      timer = setTimeout(() => go(cur + 1), MS);
+    }
+    function stop() { clearTimeout(timer); segs[cur].classList.remove('run'); }
+
+    show.querySelector('.prev').addEventListener('click', () => go(cur - 1));
+    show.querySelector('.next').addEventListener('click', () => go(cur + 1));
+    show.addEventListener('mouseenter', () => { hover = true; stop(); });
+    show.addEventListener('mouseleave', () => { hover = false; schedule(); });
+    // deslizar con el dedo en móvil
+    let x0 = null;
+    show.addEventListener('touchstart', (e) => { x0 = e.touches[0].clientX; }, { passive: true });
+    show.addEventListener('touchend', (e) => {
+      if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 40) go(cur + (dx < 0 ? 1 : -1));
+    });
+    new IntersectionObserver(([e]) => { visible = e.isIntersecting; visible ? schedule() : stop(); }, { threshold: 0.3 }).observe(show);
+    paint();
+  }
+
   // Dos toques seguidos en "Stunt Drive School" del pie abren el panel de administración
   const marca = document.getElementById('pieMarca');
   if (marca) {

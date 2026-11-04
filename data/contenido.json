@@ -89,6 +89,24 @@
       "lugar": "FAST Parcmotor · Castellolí"
     }
   ],
+  "carrusel": [
+    {
+      "src": "assets/img/carrusel/clase-cupra.jpg",
+      "alt": "Instructor dando indicaciones a un alumno al volante en la pista"
+    },
+    {
+      "src": "assets/img/carrusel/clase-moto.jpg",
+      "alt": "Dos alumnos en moto preparados para empezar un ejercicio"
+    },
+    {
+      "src": "assets/img/carrusel/nissan-rojo.jpg",
+      "alt": "Nissan 370Z rojo de la escuela en el circuito"
+    },
+    {
+      "src": "assets/img/carrusel/nissan-flota.jpg",
+      "alt": "Nissan 370Z descapotable de la escuela en el circuito"
+    }
+  ],
   "posters": [
     {
       "src": "assets/img/posters/p01.jpg",
@@ -234,6 +252,9 @@
       "v": ""
     },
     "jordi": {
+      "v": ""
+    },
+    "equipo": {
       "v": ""
     }
   }

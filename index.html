@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/img/hero-fuego.jpg" fetchpriority="high">
-<link rel="stylesheet" href="css/style.css?v=16">
+<link rel="stylesheet" href="css/style.css?v=18">
 </head>
 <body>
 
@@ -106,10 +106,41 @@
     <p class="course-note reveal">La organización se reserva el derecho de modificar fechas o temario según necesidades internas o inclemencias del tiempo.</p>
   </section>
 
+  <!-- ===== ASÍ ES UN CURSO ===== -->
+  <section class="section curso-vivo" id="experiencia">
+    <div class="vivo-grid">
+      <div class="vivo-media reveal">
+        <div class="slideshow" id="cursoSlideshow" aria-roledescription="carrusel" aria-label="Fotos de los cursos">
+        <!-- contenido:carrusel -->
+        <img class="slide active" src="assets/img/carrusel/clase-cupra.jpg" alt="Instructor dando indicaciones a un alumno al volante en la pista">
+        <img class="slide" src="assets/img/carrusel/clase-moto.jpg" alt="Dos alumnos en moto preparados para empezar un ejercicio" loading="lazy">
+        <img class="slide" src="assets/img/carrusel/nissan-rojo.jpg" alt="Nissan 370Z rojo de la escuela en el circuito" loading="lazy">
+        <img class="slide" src="assets/img/carrusel/nissan-flota.jpg" alt="Nissan 370Z descapotable de la escuela en el circuito" loading="lazy">
+        <!-- /contenido:carrusel -->
+          <div class="slide-progress" aria-hidden="true"></div>
+          <button type="button" class="slide-arrow prev" aria-label="Foto anterior">&#10094;</button>
+          <button type="button" class="slide-arrow next" aria-label="Foto siguiente">&#10095;</button>
+        </div>
+      </div>
+      <div class="vivo-text reveal">
+        <span class="sec-index">02</span>
+        <h2>Así es un curso</h2>
+        <p class="lead">Se aprende en pista, al volante, con especialistas que conducen en rodajes de verdad.</p>
+        <ul class="features">
+          <li><strong>Instrucción a pie de coche.</strong> El instructor te corrige en cada pasada, desde fuera y desde dentro.</li>
+          <li><strong>Coches y motos de la escuela.</strong> Preparados para pista, para que solo te preocupes de la técnica.</li>
+          <li><strong>Grupos reducidos.</strong> Más tiempo al volante y menos esperando turno.</li>
+          <li><strong>FAST Parcmotor.</strong> Un circuito cerrado en Castellolí, con espacio para practicar cada maniobra.</li>
+        </ul>
+        <div class="text-links"><a href="#fechas">Ver próximas fechas ↓</a></div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== PRÓXIMAS FECHAS ===== -->
   <section class="section section-tight" id="fechas">
     <div class="section-head reveal">
-      <span class="sec-index">02</span>
+      <span class="sec-index">03</span>
       <h2>Próximas fechas</h2>
       <p>Grupos reducidos en el circuito FAST Parcmotor de Castellolí. Si te interesa un curso que no aparece, escríbenos y te avisamos de la próxima convocatoria.</p>
     </div>
@@ -177,10 +208,13 @@
 
   <!-- ===== EQUIPO ===== -->
   <section class="section section-tight" id="equipo">
-    <div class="section-head reveal">
-      <span class="sec-index">03</span>
-      <h2>Quiénes somos</h2>
-      <p>Dos especialistas en activo que llevan años coordinando y rodando escenas de conducción en cine y publicidad, nacionales e internacionales.</p>
+    <div class="equipo-head">
+      <div class="section-head reveal">
+        <span class="sec-index">04</span>
+        <h2>Quiénes somos</h2>
+        <p>Dos especialistas en activo que llevan años coordinando y rodando escenas de conducción en cine y publicidad, nacionales e internacionales.</p>
+      </div>
+      <figure class="team-photo reveal"><img src="assets/img/equipo.jpg" alt="Oriol Tarrida y Jordi Nebot junto a un coche de la escuela en el circuito" loading="lazy"></figure>
     </div>
     <div class="team">
       <article class="member reveal">
@@ -217,7 +251,7 @@
   <!-- ===== GALERÍA ===== -->
   <section class="section" id="galeria">
     <div class="section-head reveal">
-      <span class="sec-index">04</span>
+      <span class="sec-index">05</span>
       <h2>En pista</h2>
       <p>Clases, pruebas y rodajes.</p>
     </div>
@@ -236,7 +270,7 @@
   <!-- ===== CONTACTO ===== -->
   <section class="contact" id="contacto">
     <div class="contact-inner reveal">
-      <span class="sec-index">05</span>
+      <span class="sec-index">06</span>
       <h2>¿Te subes<br>al coche?</h2>
       <p class="lead">Pregúntanos por fechas, plazas libres o qué curso encaja con tu experiencia.</p>
       <div class="contact-grid cols-3">
@@ -274,6 +308,6 @@
   <p>© <span id="year">2026</span> <span class="pie-marca" id="pieMarca" data-admin="https://stuntdriveschool-registro.tail077ef1.ts.net/admin">Stunt Drive School</span> · <a href="privacidad.html">Política de privacidad</a></p>
 </footer>
 
-<script src="js/main.js?v=4"></script>
+<script src="js/main.js?v=5"></script>
 </body>
 </html>

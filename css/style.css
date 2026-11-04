@@ -581,3 +581,27 @@ main section[id]{scroll-margin-top:72px;}
   .event.event-empty{grid-template-columns:1fr;}
   .event.event-empty .btn{grid-column:1;}
 }
+
+/* ---------- Así es un curso (carrusel) ---------- */
+.curso-vivo{padding-top:clamp(24px,4vh,48px);}
+.vivo-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center;}
+.vivo-media{position:relative;aspect-ratio:1/1;overflow:hidden;background:#000;border-radius:2px;}
+.vivo-text{display:flex;flex-direction:column;gap:18px;}
+.vivo-text h2{font-size:clamp(2.8rem,5.5vw,4.6rem);}
+.vivo-text .lead{font-size:1.08rem;color:var(--cream);max-width:520px;}
+.vivo-text strong{color:var(--cream);font-weight:600;}
+
+/* ---------- Foto de Oriol y Jordi ---------- */
+/* al lado del título en escritorio, para que fotos y películas sigan cabiendo en una pantalla */
+.equipo-head{display:grid;grid-template-columns:1fr minmax(0,360px);gap:32px;align-items:end;margin-bottom:44px;}
+.equipo-head .section-head{margin-bottom:0;}
+.team-photo{margin:0;overflow:hidden;border-radius:2px;background:#000;aspect-ratio:16/10;width:100%;}
+.team-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%;}
+@media (max-width: 760px){
+  .equipo-head{grid-template-columns:1fr;gap:20px;margin-bottom:24px;}
+}
+
+@media (max-width: 960px){
+  .vivo-grid{grid-template-columns:1fr;}
+  .vivo-media{max-width:620px;}
+}
