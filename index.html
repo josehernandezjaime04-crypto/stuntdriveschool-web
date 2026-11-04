@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/img/hero-fuego.jpg" fetchpriority="high">
-<link rel="stylesheet" href="css/style.css?v=6">
+<link rel="stylesheet" href="css/style.css?v=7">
 </head>
 <body>
 
@@ -132,6 +132,51 @@
       </div>
       <a href="https://wa.me/34633063657?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20curso%20de%20Moto%20Nivel%201" target="_blank" rel="noopener" class="btn">Apúntate</a>
     </article>
+
+    <!-- Lista de interesados: los datos van al servicio del minipc (data-api) -->
+    <div class="notify reveal" id="avisos">
+      <div class="notify-text">
+        <h3>Avísame de nuevas fechas</h3>
+        <p>Déjanos tus datos y te escribimos cuando abramos convocatoria de los cursos que te interesan. Sin compromiso.</p>
+      </div>
+      <form class="notify-form" id="avisosForm" novalidate
+            data-api="http://127.0.0.1:8787/interesados"
+            data-sitekey="1x00000000000000000000AA">
+        <div class="field">
+          <label for="avNombre">Nombre</label>
+          <input id="avNombre" name="nombre" type="text" autocomplete="name" maxlength="80" required>
+        </div>
+        <div class="field">
+          <label for="avEmail">Email</label>
+          <input id="avEmail" name="email" type="email" autocomplete="email" maxlength="254" required>
+        </div>
+        <div class="field">
+          <label for="avTel">Teléfono <span>(opcional)</span></label>
+          <input id="avTel" name="telefono" type="tel" autocomplete="tel" maxlength="20" inputmode="tel">
+        </div>
+        <fieldset class="field">
+          <legend>Me interesa</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="intereses" value="coche"> Coche</label>
+            <label class="chip"><input type="checkbox" name="intereses" value="moto"> Moto</label>
+            <label class="chip"><input type="checkbox" name="intereses" value="especificos"> Específicos</label>
+          </div>
+        </fieldset>
+        <div class="hp" aria-hidden="true">
+          <label for="avWeb">No rellenar</label>
+          <input id="avWeb" name="web" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <label class="consent">
+          <input type="checkbox" name="consentimiento" required>
+          <span>He leído y acepto la <a href="privacidad.html" target="_blank">política de privacidad</a>.</span>
+        </label>
+        <div class="turnstile" id="avTurnstile"></div>
+        <div class="notify-actions">
+          <button type="submit" class="btn">Quiero que me aviséis</button>
+          <p class="notify-msg" id="avisosMsg" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
   </section>
 
   <!-- ===== EQUIPO ===== -->
@@ -230,6 +275,6 @@
   <p>© <span id="year">2026</span> Stunt Drive School</p>
 </footer>
 
-<script src="js/main.js?v=1"></script>
+<script src="js/main.js?v=2"></script>
 </body>
 </html>

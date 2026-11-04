@@ -67,5 +67,84 @@
     window.addEventListener('load', buildMarquee);
   }
 
+  // Lista de interesados: envía los datos al servicio del minipc (ver data-api del formulario)
+  const form = document.getElementById('avisosForm');
+  if (form) {
+    const msg = document.getElementById('avisosMsg');
+    const btn = form.querySelector('button[type="submit"]');
+    const box = document.getElementById('avTurnstile');
+    let widget = null;
+
+    // Turnstile (antispam de Cloudflare) se carga solo cuando el formulario se acerca a pantalla
+    function cargarTurnstile() {
+      if (window.turnstile || document.getElementById('tsScript')) return;
+      window.onTurnstileLoad = () => {
+        widget = window.turnstile.render(box, { sitekey: form.dataset.sitekey, theme: 'dark', language: 'es' });
+      };
+      const s = document.createElement('script');
+      s.id = 'tsScript';
+      s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad&render=explicit';
+      s.async = true;
+      document.head.appendChild(s);
+    }
+    new IntersectionObserver(([e], obs) => {
+      if (e.isIntersecting) { cargarTurnstile(); obs.disconnect(); }
+    }, { rootMargin: '600px 0px' }).observe(form);
+
+    function aviso(texto, tipo) {
+      msg.textContent = texto;
+      msg.className = 'notify-msg' + (tipo ? ' ' + tipo : '');
+    }
+    function marcar(campo, mal) { campo.setAttribute('aria-invalid', mal ? 'true' : 'false'); }
+
+    form.addEventListener('submit', async (ev) => {
+      ev.preventDefault();
+      const f = form.elements;
+      const nombre = f.nombre.value.trim();
+      const email = f.email.value.trim();
+      const telefono = f.telefono.value.trim();
+      const nombreMal = nombre.length < 2;
+      const emailMal = !/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(email);
+      const telMal = telefono !== '' && !/^\+?[0-9 ]{6,20}$/.test(telefono);
+      marcar(f.nombre, nombreMal); marcar(f.email, emailMal); marcar(f.telefono, telMal);
+      if (nombreMal) { f.nombre.focus(); return aviso('Escribe tu nombre.', 'error'); }
+      if (emailMal) { f.email.focus(); return aviso('Revisa el email.', 'error'); }
+      if (telMal) { f.telefono.focus(); return aviso('Revisa el teléfono (solo números).', 'error'); }
+      if (!f.consentimiento.checked) return aviso('Tienes que aceptar la política de privacidad.', 'error');
+
+      const token = window.turnstile && widget !== null ? window.turnstile.getResponse(widget) : '';
+      const datos = {
+        nombre, email, telefono,
+        intereses: [...form.querySelectorAll('input[name="intereses"]:checked')].map((i) => i.value),
+        consentimiento: true,
+        web: f.web.value,
+        turnstile: token || ''
+      };
+
+      btn.disabled = true;
+      aviso('Enviando…');
+      try {
+        const r = await fetch(form.dataset.api, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(datos)
+        });
+        const res = await r.json().catch(() => ({}));
+        if (r.ok && res.ok) {
+          form.closest('.notify').classList.add('sent');
+          aviso('¡Hecho! Te avisaremos cuando haya nuevas fechas.', 'ok');
+          form.reset();
+          return;
+        }
+        aviso(res.error || 'No se ha podido enviar. Inténtalo de nuevo.', 'error');
+      } catch (e) {
+        aviso('Ahora mismo no podemos guardar tu solicitud. Escríbenos por WhatsApp al 633 06 36 57.', 'error');
+      } finally {
+        btn.disabled = false;
+        if (window.turnstile && widget !== null) window.turnstile.reset(widget);
+      }
+    });
+  }
+
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
