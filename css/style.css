@@ -616,3 +616,6 @@ main section[id]{scroll-margin-top:72px;}
   .event-con-foto .event-foto{grid-column:1 / -1;}
   .event-foto img{height:auto;max-height:420px;object-fit:contain;}
 }
+@media (max-width: 600px){
+  .event.event-con-foto{grid-template-columns:1fr;}
+}
