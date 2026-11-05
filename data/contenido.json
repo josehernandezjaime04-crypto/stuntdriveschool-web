@@ -24,14 +24,14 @@
     },
     {
       "grupo": "genericos",
-      "tipo": "Combo",
+      "tipo": "Combo coche",
       "nombre": "Niveles 1 y 2",
       "detalle": "",
       "precio": 550
     },
     {
       "grupo": "genericos",
-      "tipo": "Combo",
+      "tipo": "Combo coche",
       "nombre": "Supercombo · niveles 1, 2 y 3",
       "detalle": "",
       "precio": 850
