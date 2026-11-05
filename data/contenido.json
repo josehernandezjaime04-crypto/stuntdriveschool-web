@@ -244,11 +244,6 @@
       "src": "assets/img/camaracar.jpg",
       "alt": "Camera car siguiendo a un coche en la pista",
       "forma": "ancha"
-    },
-    {
-      "src": "assets/img/dos-ruedas-2.jpg",
-      "alt": "Coche sobre dos ruedas junto a un cono",
-      "forma": "ancha"
     }
   ],
   "fotos": {
@@ -265,7 +260,7 @@
       "v": ""
     },
     "equipo": {
-      "v": ""
+      "v": "ede46cc6"
     }
   }
 }
