@@ -359,6 +359,7 @@ em{font-style:normal;color:var(--red);}
 
 /* ---------- Contacto (5 columnas + dirección) ---------- */
 .contact-grid.cols-3{grid-template-columns:repeat(3,1fr);}
+.contact-grid.cols-3 > :last-child:nth-child(3n+2){grid-column:span 2;}
 .contact-address{margin-top:20px;font-size:0.85rem;color:var(--cream-dim);}
 .contact-address a{border-bottom:1px solid var(--red);}
 
@@ -367,6 +368,8 @@ em{font-style:normal;color:var(--red);}
   .event{grid-template-columns:auto 1fr;gap:24px;padding:28px;}
   .event .btn{grid-column:1 / -1;justify-self:start;}
   .contact-grid.cols-3{grid-template-columns:1fr 1fr;}
+  .contact-grid.cols-3 > :last-child:nth-child(3n+2){grid-column:auto;}
+  .contact-grid.cols-3 > :last-child:nth-child(odd){grid-column:1 / -1;}
 }
 @media (max-width: 600px){
   .logo-img{height:54px;}
@@ -380,6 +383,7 @@ em{font-style:normal;color:var(--red);}
   .event-date{justify-self:start;}
   .pl-tag{display:none;}
   .contact-grid.cols-3{grid-template-columns:1fr;}
+  .contact-grid.cols-3 > :last-child:nth-child(odd){grid-column:auto;}
 }
 
 /* ---------- Ajustes de texto y maquetación ---------- */
