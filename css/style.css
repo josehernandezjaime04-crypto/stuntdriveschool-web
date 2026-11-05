@@ -575,6 +575,8 @@ main section[id]{scroll-margin-top:72px;}
 
 /* ---------- Fechas generadas desde el panel ---------- */
 .event-date{line-height:1;text-transform:uppercase;}
+.event-date b{white-space:nowrap;}
+.event-date b.largo{font-size:1.5rem;}
 .event.event-empty{grid-template-columns:1fr auto;}
 .pie-marca{cursor:default;user-select:none;-webkit-user-select:none;}
 @media (max-width: 960px){
