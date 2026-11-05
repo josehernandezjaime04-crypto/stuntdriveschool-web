@@ -92,14 +92,14 @@
       "plazas": 12,
       "reserva": 215,
       "lugar": "FAST Parcmotor · Castellolí",
-      "horario": "",
-      "condiciones": "",
-      "direccion": "Carretera N-II, km 560 · 08719 Castellolí (Barcelona)",
-      "slug": "super-combo",
       "subtitulo": "Domina el asfalto como un profesional",
+      "horario": "09:00 a 18:00 h",
       "precio": 850,
+      "direccion": "Carretera N-II, km 560 · 08719 Castellolí (Barcelona)",
       "detalle": "El programa más completo de Stunt Drive School. Diseñado para quienes quieren llevar su conducción al siguiente nivel sin dejarse nada en el tintero.\nEn este curso intensivo aprenderás a controlar el coche en situaciones extremas, uniendo maniobras de precisión, derrapes controlados, giros de 180º y técnicas de evasión.\nTres días, tres niveles: nivel 1, control y técnica; nivel 2, precisión y avanzado; nivel 3, stunt y escenas reales.\nSiente la adrenalina de una persecución de cine con la máxima seguridad.",
-      "incluye": ""
+      "incluye": "",
+      "condiciones": "",
+      "slug": "super-combo"
     },
     {
       "titulo": "Moto · Nivel 1",
@@ -110,14 +110,14 @@
       "plazas": 10,
       "reserva": 100,
       "lugar": "FAST Parcmotor · Castellolí",
-      "horario": "",
-      "condiciones": "",
-      "direccion": "Carretera N-II, km 560 · 08719 Castellolí (Barcelona)",
-      "slug": "moto-nivel-1",
       "subtitulo": "Curso de iniciación a la conducción de moto de precisión para cine",
+      "horario": "",
       "precio": 310,
+      "direccion": "Carretera N-II, km 560 · 08719 Castellolí (Barcelona)",
       "detalle": "Curso de iniciación a la conducción de moto para cine: slaloms, salidas, derrapes y trazadas.\nPrecio con moto de la escuela: 310 €. Si vienes con tu propia moto: 250 €.",
-      "incluye": "Moto adaptada\nInstalaciones del circuito\nSeguro de pista\nCasco (aunque recomendamos traer el tuyo)"
+      "incluye": "Moto adaptada\nInstalaciones del circuito\nSeguro de pista\nCasco (aunque recomendamos traer el tuyo)",
+      "condiciones": "",
+      "slug": "moto-nivel-1"
     }
   ],
   "carrusel": [
