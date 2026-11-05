@@ -203,5 +203,19 @@
     });
   }
 
+  // Página de un curso: compartir (menú del móvil o copiar el enlace)
+  const compartir = document.getElementById('compartir');
+  if (compartir) {
+    compartir.addEventListener('click', async () => {
+      try {
+        if (navigator.share) { await navigator.share({ title: document.title, url: location.href }); return; }
+        await navigator.clipboard.writeText(location.href);
+        compartir.textContent = 'Enlace copiado';
+      } catch (e) {
+        if (!e || e.name !== 'AbortError') compartir.textContent = location.href;
+      }
+    });
+  }
+
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
