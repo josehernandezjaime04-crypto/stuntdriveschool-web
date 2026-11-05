@@ -582,7 +582,7 @@ main section[id]{scroll-margin-top:72px;}
   .event.event-empty .btn{grid-column:1;}
 }
 
-/* ---------- Así es un curso (carrusel) ---------- */
+/* ---------- Así son nuestros cursos (carrusel) ---------- */
 .curso-vivo{padding-top:clamp(24px,4vh,48px);}
 .vivo-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:center;}
 .vivo-media{position:relative;aspect-ratio:1/1;overflow:hidden;background:#000;border-radius:2px;}

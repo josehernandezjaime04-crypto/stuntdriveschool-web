@@ -151,7 +151,7 @@
     });
   }
 
-  // Carrusel "Así es un curso": pasa solo, se pausa fuera de pantalla y con el ratón encima
+  // Carrusel "Así son nuestros cursos": pasa solo, se pausa fuera de pantalla y con el ratón encima
   const show = document.getElementById('cursoSlideshow');
   if (show) {
     const slides = [...show.querySelectorAll('.slide')];
