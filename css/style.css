@@ -398,7 +398,7 @@ main section[id]{scroll-margin-top:72px;}
 
 /* Lista de precios: columnas fijas y todo centrado en vertical */
 .price-list li{align-items:center;}
-.pl-tag{flex:0 0 72px;min-width:0;}
+.pl-tag{flex:0 0 100px;min-width:0;}
 .pl-name{line-height:1.35;}
 .pl-name span{margin-top:2px;}
 .pl-price{line-height:1;}
