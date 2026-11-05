@@ -244,6 +244,26 @@
       "src": "assets/img/camaracar.jpg",
       "alt": "Camera car siguiendo a un coche en la pista",
       "forma": "ancha"
+    },
+    {
+      "src": "assets/img/galeria/a43271169a6b.jpg",
+      "alt": "",
+      "forma": "normal"
+    },
+    {
+      "src": "assets/img/galeria/b5c2865ea87f.jpg",
+      "alt": "",
+      "forma": "normal"
+    },
+    {
+      "src": "assets/img/galeria/ba0e5b589aa6.jpg",
+      "alt": "",
+      "forma": "normal"
+    },
+    {
+      "src": "assets/img/galeria/9d0c52cdfca2.jpg",
+      "alt": "",
+      "forma": "normal"
     }
   ],
   "fotos": {
