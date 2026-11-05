@@ -83,10 +83,19 @@
     {
       "titulo": "Moto · Nivel 1",
       "fecha": "",
-      "imagen": "",
+      "imagen": "assets/img/fechas/678229727dba.jpg",
       "descripcion": "Iniciación a la conducción de moto de precisión para cine: slaloms, salidas, derrapes y trazadas. Incluye moto adaptada, instalaciones y seguro de pista. Hay cascos, pero recomendamos traer el tuyo.",
       "plazas": 10,
       "reserva": 100,
+      "lugar": "FAST Parcmotor · Castellolí"
+    },
+    {
+      "titulo": "Nuevo curso Super combo",
+      "fecha": "2026-01-08",
+      "imagen": "assets/img/fechas/09169526a99d.jpg",
+      "descripcion": "CURSO SUPER COMBO | Domina el asfalto como un profesional\nEl programa más completo de Stunt Drive School. Diseñado para quienes quieren llevar su conducción al siguiente nivel sin dejarse nada en el tintero. En este curso intensivo aprenderás a controlar el coche en situaciones extremas, uniendo maniobras de precisión, derrapes controlados, giros de 180º y técnicas de evasión.\nSiente la adrenalina de una persecución de cine con la máxima seguridad.",
+      "plazas": 12,
+      "reserva": 215,
       "lugar": "FAST Parcmotor · Castellolí"
     }
   ],
