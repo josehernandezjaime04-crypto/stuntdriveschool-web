@@ -1,4 +1,25 @@
 (function () {
+  // Idiomas: index y privacidad cargan js/i18n.js en <head>. Las páginas de curso las genera el panel
+  // y solo traen este archivo, así que aquí se carga i18n.js (misma versión que main.js).
+  if (!window.SDSi18n && document.currentScript) {
+    const html = document.documentElement;
+    try { // misma detección que i18n.js, solo para ocultar la página mientras se traduce
+      const ok = ['ca', 'es', 'en'];
+      const q = new URLSearchParams(location.search).get('lang');
+      const g = localStorage.getItem('sds-idioma');
+      const nav = (navigator.languages || [navigator.language || '']).map((x) => String(x).toLowerCase().split('-')[0]).find((x) => ok.includes(x));
+      const l = [q, g, nav].find((x) => ok.includes(x)) || 'es';
+      if (l !== 'es') { html.classList.add('i18n-cargando'); setTimeout(() => html.classList.remove('i18n-cargando'), 2500); }
+    } catch (e) { /* nada */ }
+    const s = document.createElement('script');
+    s.src = document.currentScript.src.replace(/main\.js(\?[^#]*)?$/, 'i18n.js$1');
+    s.onerror = () => html.classList.remove('i18n-cargando');
+    document.head.appendChild(s);
+  }
+  // Texto en el idioma elegido (con el castellano de reserva si aún no hay diccionario)
+  const t = (clave, def) => (window.SDSi18n && window.SDSi18n.t(clave)) || def;
+  const idioma = () => (window.SDSi18n ? window.SDSi18n.idioma : 'es');
+
   const header = document.getElementById('siteHeader');
   const progress = document.querySelector('#scrollProgress span');
   const heroPhoto = document.getElementById('heroPhoto');
@@ -79,7 +100,7 @@
     function cargarTurnstile() {
       if (window.turnstile || document.getElementById('tsScript')) return;
       window.onTurnstileLoad = () => {
-        widget = window.turnstile.render(box, { sitekey: form.dataset.sitekey, theme: 'dark', language: 'es' });
+        widget = window.turnstile.render(box, { sitekey: form.dataset.sitekey, theme: 'dark', language: idioma() === 'en' ? 'en' : 'es' });
       };
       const s = document.createElement('script');
       s.id = 'tsScript';
@@ -107,10 +128,10 @@
       const emailMal = !/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(email);
       const telMal = telefono !== '' && !/^\+?[0-9 ]{6,20}$/.test(telefono);
       marcar(f.nombre, nombreMal); marcar(f.email, emailMal); marcar(f.telefono, telMal);
-      if (nombreMal) { f.nombre.focus(); return aviso('Escribe tu nombre.', 'error'); }
-      if (emailMal) { f.email.focus(); return aviso('Revisa el email.', 'error'); }
-      if (telMal) { f.telefono.focus(); return aviso('Revisa el teléfono (solo números).', 'error'); }
-      if (!f.consentimiento.checked) return aviso('Tienes que aceptar la política de privacidad.', 'error');
+      if (nombreMal) { f.nombre.focus(); return aviso(t('formulario.errNombre', 'Escribe tu nombre.'), 'error'); }
+      if (emailMal) { f.email.focus(); return aviso(t('formulario.errEmail', 'Revisa el email.'), 'error'); }
+      if (telMal) { f.telefono.focus(); return aviso(t('formulario.errTelefono', 'Revisa el teléfono (solo números).'), 'error'); }
+      if (!f.consentimiento.checked) return aviso(t('formulario.errConsentimiento', 'Tienes que aceptar la política de privacidad.'), 'error');
 
       const token = window.turnstile && widget !== null ? window.turnstile.getResponse(widget) : '';
       const datos = {
@@ -122,7 +143,7 @@
       };
 
       btn.disabled = true;
-      aviso('Enviando…');
+      aviso(t('formulario.enviando', 'Enviando…'));
       // si el servidor no contesta en 15 s, se corta y se ofrece WhatsApp en vez de quedarse esperando
       const corte = new AbortController();
       const reloj = setTimeout(() => corte.abort(), 15000);
@@ -136,13 +157,15 @@
         const res = await r.json().catch(() => ({}));
         if (r.ok && res.ok) {
           form.closest('.notify').classList.add('sent');
-          aviso('¡Hecho! Te avisaremos cuando haya nuevas fechas.', 'ok');
+          aviso(t('formulario.hecho', '¡Hecho! Te avisaremos cuando haya nuevas fechas.'), 'ok');
           form.reset();
           return;
         }
-        aviso(res.error || 'No se ha podido enviar. Inténtalo de nuevo.', 'error');
+        // los errores del servidor llegan en castellano: se traducen si son conocidos (sección "servidor")
+        const error = res.error && window.SDSi18n ? window.SDSi18n.texto(res.error) : res.error;
+        aviso(error || t('formulario.errEnvio', 'No se ha podido enviar. Inténtalo de nuevo.'), 'error');
       } catch (e) {
-        aviso('Ahora mismo no podemos guardar tu solicitud. Escríbenos por WhatsApp al 633 06 36 57.', 'error');
+        aviso(t('formulario.errConexion', 'Ahora mismo no podemos guardar tu solicitud. Escríbenos por WhatsApp al 633 06 36 57.'), 'error');
       } finally {
         clearTimeout(reloj);
         btn.disabled = false;
@@ -210,7 +233,7 @@
       try {
         if (navigator.share) { await navigator.share({ title: document.title, url: location.href }); return; }
         await navigator.clipboard.writeText(location.href);
-        compartir.textContent = 'Enlace copiado';
+        compartir.textContent = t('formulario.enlaceCopiado', 'Enlace copiado');
       } catch (e) {
         if (!e || e.name !== 'AbortError') compartir.textContent = location.href;
       }
