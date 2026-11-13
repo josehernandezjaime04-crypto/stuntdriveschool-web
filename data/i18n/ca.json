@@ -1,0 +1,193 @@
+{
+  "comun": {
+    "nav": {
+      "fechas": "Properes dates",
+      "cursos": "Cursos i preus",
+      "galeria": "Galeria",
+      "equipo": "Qui som",
+      "contacto": "Contacte"
+    },
+    "reservarPlaza": "Reserva plaça",
+    "menu": "Menú",
+    "inicioAria": "Stunt Drive School — inici",
+    "privacidad": "Política de privacitat",
+    "idioma": "Idioma"
+  },
+  "inicio": {
+    "meta": {
+      "titulo": "Stunt Drive School — Escola de conducció per a especialistes de cinema",
+      "descripcion": "Escola oficial de conducció de precisió per a especialistes de cinema i publicitat: persecucions, drift, cotxes a dues rodes, seguiment amb camera car i moto. Cursos a Castellolí (Barcelona)."
+    },
+    "hero": {
+      "alt": "Cotxe blanc travessant una gran flamarada de foc a la pista",
+      "eyebrow1": "Escola oficial de precisió",
+      "eyebrow2": "Stunt driver per a cinema i publicitat",
+      "titulo": "Cursos de<br>conducció<br>per a <em>cinema</em>",
+      "sub": "Tècniques exclusives del sector audiovisual: persecucions, contrabandistes, cotxes a dues rodes, drift i molt més. Aprèn amb especialistes que ho fan en rodatge.",
+      "verCursos": "Veure cursos",
+      "bajar": "Baixar"
+    },
+    "experiencia": {
+      "carruselAria": "Fotos dels cursos",
+      "carrusel": "carrusel",
+      "fotoAnterior": "Foto anterior",
+      "fotoSiguiente": "Foto següent",
+      "titulo": "Així són els nostres cursos",
+      "lead": "S'aprèn a la pista, al volant, amb especialistes que condueixen en rodatges de veritat.",
+      "f1": "<strong>Instrucció al costat del cotxe.</strong> L'instructor et corregeix a cada passada, des de fora i des de dins.",
+      "f2": "<strong>Cotxes i motos de l'escola.</strong> Preparats per a la pista, perquè només et preocupis de la tècnica.",
+      "f3": "<strong>Grups reduïts.</strong> Més temps al volant i menys esperant torn.",
+      "f4": "<strong>FAST Parcmotor.</strong> Un circuit tancat a Castellolí, amb espai per practicar cada maniobra.",
+      "verFechas": "Veure properes dates ↓"
+    },
+    "fechas": {
+      "intro": "Grups reduïts al circuit FAST Parcmotor de Castellolí. Si t'interessa un curs que no hi surt, escriu-nos i t'avisarem de la propera convocatòria."
+    },
+    "avisos": {
+      "titulo": "Avisa'm de noves dates",
+      "texto": "Deixa'ns les teves dades i t'escriurem quan obrim convocatòria dels cursos que t'interessen. Sense compromís.",
+      "nombre": "Nom",
+      "email": "Correu electrònic",
+      "telefono": "Telèfon <span>(opcional)</span>",
+      "meInteresa": "M'interessa",
+      "coche": "Cotxe",
+      "moto": "Moto",
+      "especificos": "Específics",
+      "consentimiento": "He llegit i accepto la <a href=\"privacidad.html\" target=\"_blank\">política de privacitat</a>.",
+      "enviar": "Vull que m'aviseu"
+    },
+    "cursos": {
+      "intro": "Formació per nivells en cotxe i moto. Comença per la precisió i especialitza't en la tècnica que demana cada escena.",
+      "nota": "L'organització es reserva el dret de modificar dates o temari segons necessitats internes o per les inclemències del temps."
+    },
+    "galeria": {
+      "titulo": "A la pista",
+      "intro": "Classes, proves i rodatges."
+    },
+    "equipo": {
+      "intro": "Dos especialistes en actiu que fa anys que coordinen i roden escenes de conducció en cinema i publicitat, nacionals i internacionals.",
+      "fotoAlt": "Oriol Tarrida i Jordi Nebot al costat d'un cotxe de l'escola al circuit",
+      "oriolAlt": "Retrat d'Oriol Tarrida",
+      "oriolRol": "Precisió de cinema. Lideratge al set.",
+      "oriolBio": "CEO de Stunts Tarrida Team i especialista d'acció consolidat. La seva especialitat: portar els vehicles al límit davant de les càmeres. Ara posa tota aquesta experiència al teu abast.",
+      "jordiAlt": "Retrat de Jordi Nebot",
+      "jordiRol": "Vehicles de cinema. Control absolut.",
+      "jordiBio": "CEO de TyreAction i Precision Driver. Hi aporta la seva visió com a coordinador d'acció i anys de rodatges internacionals per portar la conducció tècnica al nivell següent."
+    },
+    "posters": {
+      "aria": "Produccions en què ha treballat l'equip",
+      "label": "Produccions en què ha participat el nostre equip"
+    },
+    "contacto": {
+      "titulo": "Puges<br>al cotxe?",
+      "lead": "Pregunta'ns per dates, places lliures o quin curs encaixa amb la teva experiència.",
+      "telefono": "Telèfon",
+      "whatsapp": "<span>WhatsApp</span>Escriu-nos",
+      "donde": "On"
+    },
+    "mas": {
+      "label": "Més serveis",
+      "oriol": "Coordinador d'acció",
+      "tyreaction": "Vehicles i serveis d'automoció per a cinema"
+    }
+  },
+  "formulario": {
+    "errNombre": "Escriu el teu nom.",
+    "errEmail": "Revisa el correu electrònic.",
+    "errTelefono": "Revisa el telèfon (només números).",
+    "errConsentimiento": "Has d'acceptar la política de privacitat.",
+    "enviando": "S'està enviant…",
+    "hecho": "Fet! T'avisarem quan hi hagi noves dates.",
+    "errEnvio": "No s'ha pogut enviar. Torna-ho a provar.",
+    "errConexion": "Ara mateix no podem desar la teva sol·licitud. Escriu-nos per WhatsApp al 633 06 36 57.",
+    "enlaceCopiado": "Enllaç copiat"
+  },
+  "servidor": {
+    "datosNoValidos": "Dades no vàlides.",
+    "demasiadoGrandes": "Dades massa grans.",
+    "demasiadosIntentos": "Massa intents. Torna-ho a provar d'aquí a uns minuts.",
+    "robot": "No hem pogut comprovar que no ets un robot. Torna a carregar la pàgina.",
+    "origen": "Origen no permès."
+  },
+  "privacidad": {
+    "meta": {
+      "titulo": "Política de privacitat — Stunt Drive School"
+    },
+    "volver": "Tornar",
+    "inicio": "Inici",
+    "miga": "Privacitat",
+    "fecha": "Llista d'interessats · versió de novembre de 2026",
+    "quienH": "Qui tracta les teves dades",
+    "quienP": "El responsable és <strong>TYREACTION, S.L.</strong>, titular de Stunt Drive School. Ens pots trucar o escriure per WhatsApp al <a href=\"tel:+34633063657\">633 06 36 57</a>.",
+    "datosH": "Quines dades recollim i per a què",
+    "datosP": "Quan t'apuntes a la llista d'interessats desem el teu nom, el teu correu electrònic, el teu telèfon si ens el dones i els tipus de curs que t'interessen. Els fem servir només per avisar-te quan obrim noves dates o convocatòries dels nostres cursos. No els fem servir per a res més ni fem perfils.",
+    "baseH": "Per què ho podem fer",
+    "baseP": "Perquè ens dones el teu consentiment en marcar la casella del formulari. El pots retirar quan vulguis, sense haver de donar explicacions.",
+    "plazoH": "Quant de temps les guardem",
+    "plazoP": "Fins que ens demanis la baixa. Quan ho facis, esborrarem les teves dades de la llista.",
+    "dondeH": "On són i qui les veu",
+    "dondeP": "Les dades es guarden en un servidor propi situat a Espanya, xifrat i sense accés públic. No les venem ni les cedim a ningú. Per protegir el formulari d'enviaments automàtics fem servir Cloudflare, que tracta de manera tècnica la teva adreça IP per comprovar que no ets un robot; no rep la resta de les teves dades.",
+    "derechosH": "Els teus drets",
+    "derechosP": "Ens pots demanar en qualsevol moment veure les teves dades, corregir-les, esborrar-les, limitar-ne l'ús, oposar-te que les fem servir o endur-te-les. N'hi ha prou que ens escriguis al correu de dalt indicant què vols. Si creus que no hem atès bé la teva petició, pots reclamar davant l'<a href=\"https://www.aepd.es/\" target=\"_blank\" rel=\"noopener\">Agencia Española de Protección de Datos</a>.",
+    "bajaH": "Donar-te de baixa",
+    "bajaP": "Escriu-nos per WhatsApp o truca'ns al <a href=\"tel:+34633063657\">633 06 36 57</a> i et traurem de la llista."
+  },
+  "generado": {
+    "_nota": "Textos fixos que escriu el panell (contenido.py).",
+    "tipos": {
+      "coche": "Cotxe",
+      "comboCoche": "Combo cotxe",
+      "supercomboCoche": "Supercombo cotxe",
+      "moto": "Moto",
+      "comboMoto": "Combo moto",
+      "supercomboMoto": "Supercombo moto"
+    },
+    "precios": {
+      "genericos": "Genèrics",
+      "genericosSub": "Precisió · Stunt driver",
+      "especificos": "Específics",
+      "especificosSub": "Cotxe · nivell 1",
+      "proximamente": "Properament",
+      "fotoAlt": "Cotxe circulant sobre dues rodes a la pista"
+    },
+    "fechas": {
+      "meses": ["Gen", "Feb", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Oct", "Nov", "Des"],
+      "cajaFecha": "Data",
+      "cajaPor": "Per",
+      "cajaConfirmar": "confirmar",
+      "dias": "dies",
+      "plazas": "places",
+      "reserva": "Reserva",
+      "masInfo": "Més informació",
+      "masInfoAria": "Més informació: {titulo}",
+      "sinFechas": "Ara mateix no hi ha dates obertes",
+      "sinFechasTexto": "Estem preparant les properes convocatòries. Apunta't a la llista d'avisos i t'escriurem tan bon punt hi hagi data.",
+      "avisame": "Avisa'm"
+    },
+    "curso": {
+      "tituloPagina": "{titulo} — Stunt Drive School",
+      "todasFechas": "← Totes les dates",
+      "verGrande": "Veure en gran",
+      "proximaFecha": "Propera data",
+      "horario": "Horari",
+      "lugar": "Lloc",
+      "verMapa": "Veure al mapa ↗",
+      "porConfirmar": "Per confirmar",
+      "nDias": "({n} dies)",
+      "precio": "Preu",
+      "plazas": "Places",
+      "reservarWhatsApp": "Reserva per WhatsApp",
+      "llamar": "Truca · {tel}",
+      "sobre": "Sobre el curs",
+      "pronto": "Aviat hi afegirem el programa complet. Escriu-nos i t'ho expliquem.",
+      "incluye": "Què inclou",
+      "comoReservar": "Com reservar",
+      "condicionesReserva": "Per confirmar la teva plaça cal una reserva de {precio} per persona.",
+      "escribenos1": "Escriu-nos per WhatsApp o truca'ns al",
+      "escribenos2": "i et direm quantes places queden.",
+      "avisameFecha": "Avisa'm quan hi hagi data →",
+      "compartir": "Comparteix aquest curs",
+      "whatsapp": "Hola, vull informació del curs {curso}"
+    }
+  }
+}

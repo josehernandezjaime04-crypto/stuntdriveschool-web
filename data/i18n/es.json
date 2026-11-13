@@ -1,0 +1,193 @@
+{
+  "comun": {
+    "nav": {
+      "fechas": "Próximas fechas",
+      "cursos": "Cursos y precios",
+      "galeria": "Galería",
+      "equipo": "Quiénes somos",
+      "contacto": "Contacto"
+    },
+    "reservarPlaza": "Reservar plaza",
+    "menu": "Menú",
+    "inicioAria": "Stunt Drive School — inicio",
+    "privacidad": "Política de privacidad",
+    "idioma": "Idioma"
+  },
+  "inicio": {
+    "meta": {
+      "titulo": "Stunt Drive School — Escuela de conducción para especialistas de cine",
+      "descripcion": "Escuela oficial de conducción de precisión para especialistas de cine y publicidad: persecuciones, drift, coches a dos ruedas, seguimiento con camera car y moto. Cursos en Castellolí (Barcelona)."
+    },
+    "hero": {
+      "alt": "Coche blanco atravesando una gran llamarada de fuego en pista",
+      "eyebrow1": "Escuela oficial de precisión",
+      "eyebrow2": "Stunt driver para cine y publicidad",
+      "titulo": "Cursos de<br>conducción<br>para <em>cine</em>",
+      "sub": "Técnicas exclusivas del sector audiovisual: persecuciones, contrabandistas, coches a dos ruedas, drift y mucho más. Aprende con especialistas que lo hacen en rodaje.",
+      "verCursos": "Ver cursos",
+      "bajar": "Bajar"
+    },
+    "experiencia": {
+      "carruselAria": "Fotos de los cursos",
+      "carrusel": "carrusel",
+      "fotoAnterior": "Foto anterior",
+      "fotoSiguiente": "Foto siguiente",
+      "titulo": "Así son nuestros cursos",
+      "lead": "Se aprende en pista, al volante, con especialistas que conducen en rodajes de verdad.",
+      "f1": "<strong>Instrucción a pie de coche.</strong> El instructor te corrige en cada pasada, desde fuera y desde dentro.",
+      "f2": "<strong>Coches y motos de la escuela.</strong> Preparados para pista, para que solo te preocupes de la técnica.",
+      "f3": "<strong>Grupos reducidos.</strong> Más tiempo al volante y menos esperando turno.",
+      "f4": "<strong>FAST Parcmotor.</strong> Un circuito cerrado en Castellolí, con espacio para practicar cada maniobra.",
+      "verFechas": "Ver próximas fechas ↓"
+    },
+    "fechas": {
+      "intro": "Grupos reducidos en el circuito FAST Parcmotor de Castellolí. Si te interesa un curso que no aparece, escríbenos y te avisamos de la próxima convocatoria."
+    },
+    "avisos": {
+      "titulo": "Avísame de nuevas fechas",
+      "texto": "Déjanos tus datos y te escribimos cuando abramos convocatoria de los cursos que te interesan. Sin compromiso.",
+      "nombre": "Nombre",
+      "email": "Email",
+      "telefono": "Teléfono <span>(opcional)</span>",
+      "meInteresa": "Me interesa",
+      "coche": "Coche",
+      "moto": "Moto",
+      "especificos": "Específicos",
+      "consentimiento": "He leído y acepto la <a href=\"privacidad.html\" target=\"_blank\">política de privacidad</a>.",
+      "enviar": "Quiero que me aviséis"
+    },
+    "cursos": {
+      "intro": "Formación por niveles en coche y moto. Empieza por la precisión y especialízate en la técnica que pide cada escena.",
+      "nota": "La organización se reserva el derecho de modificar fechas o temario según necesidades internas o inclemencias del tiempo."
+    },
+    "galeria": {
+      "titulo": "En pista",
+      "intro": "Clases, pruebas y rodajes."
+    },
+    "equipo": {
+      "intro": "Dos especialistas en activo que llevan años coordinando y rodando escenas de conducción en cine y publicidad, nacionales e internacionales.",
+      "fotoAlt": "Oriol Tarrida y Jordi Nebot junto a un coche de la escuela en el circuito",
+      "oriolAlt": "Retrato de Oriol Tarrida",
+      "oriolRol": "Precisión de cine. Liderazgo en el set.",
+      "oriolBio": "CEO de Stunts Tarrida Team y especialista de acción consolidado. Su especialidad: llevar los vehículos al extremo frente a las cámaras. Ahora, pone toda esa experiencia a tu alcance.",
+      "jordiAlt": "Retrato de Jordi Nebot",
+      "jordiRol": "Vehículos de cine. Control absoluto.",
+      "jordiBio": "CEO de TyreAction y Precision Driver. Aporta su visión como coordinador de acción y años de rodajes internacionales para llevar la conducción técnica al siguiente nivel."
+    },
+    "posters": {
+      "aria": "Producciones en las que ha trabajado el equipo",
+      "label": "Producciones en las que ha participado nuestro equipo"
+    },
+    "contacto": {
+      "titulo": "¿Te subes<br>al coche?",
+      "lead": "Pregúntanos por fechas, plazas libres o qué curso encaja con tu experiencia.",
+      "telefono": "Teléfono",
+      "whatsapp": "<span>WhatsApp</span>Escríbenos",
+      "donde": "Dónde"
+    },
+    "mas": {
+      "label": "Más servicios",
+      "oriol": "Coordinador de acción",
+      "tyreaction": "Vehículos y servicios de automoción para cine"
+    }
+  },
+  "formulario": {
+    "errNombre": "Escribe tu nombre.",
+    "errEmail": "Revisa el email.",
+    "errTelefono": "Revisa el teléfono (solo números).",
+    "errConsentimiento": "Tienes que aceptar la política de privacidad.",
+    "enviando": "Enviando…",
+    "hecho": "¡Hecho! Te avisaremos cuando haya nuevas fechas.",
+    "errEnvio": "No se ha podido enviar. Inténtalo de nuevo.",
+    "errConexion": "Ahora mismo no podemos guardar tu solicitud. Escríbenos por WhatsApp al 633 06 36 57.",
+    "enlaceCopiado": "Enlace copiado"
+  },
+  "servidor": {
+    "datosNoValidos": "Datos no válidos.",
+    "demasiadoGrandes": "Datos demasiado grandes.",
+    "demasiadosIntentos": "Demasiados intentos. Prueba en unos minutos.",
+    "robot": "No hemos podido comprobar que no eres un robot. Recarga la página.",
+    "origen": "Origen no permitido."
+  },
+  "privacidad": {
+    "meta": {
+      "titulo": "Política de privacidad — Stunt Drive School"
+    },
+    "volver": "Volver",
+    "inicio": "Inicio",
+    "miga": "Privacidad",
+    "fecha": "Lista de interesados · versión de noviembre de 2026",
+    "quienH": "Quién trata tus datos",
+    "quienP": "El responsable es <strong>TYREACTION, S.L.</strong>, titular de Stunt Drive School. Puedes llamarnos o escribirnos por WhatsApp al <a href=\"tel:+34633063657\">633 06 36 57</a>.",
+    "datosH": "Qué datos recogemos y para qué",
+    "datosP": "Cuando te apuntas a la lista de interesados guardamos tu nombre, tu email, tu teléfono si nos lo das y los tipos de curso que te interesan. Los usamos solo para avisarte cuando abramos nuevas fechas o convocatorias de nuestros cursos. No los usamos para nada más ni hacemos perfiles.",
+    "baseH": "Por qué podemos hacerlo",
+    "baseP": "Porque nos das tu consentimiento al marcar la casilla del formulario. Puedes retirarlo cuando quieras, sin tener que dar explicaciones.",
+    "plazoH": "Cuánto tiempo los guardamos",
+    "plazoP": "Hasta que nos pidas la baja. Cuando lo hagas, borramos tus datos de la lista.",
+    "dondeH": "Dónde están y quién los ve",
+    "dondeP": "Los datos se guardan en un servidor propio situado en España, cifrado y sin acceso público. No los vendemos ni los cedemos a nadie. Para proteger el formulario de envíos automáticos usamos Cloudflare, que procesa de forma técnica tu dirección IP para comprobar que no eres un robot; no recibe el resto de tus datos.",
+    "derechosH": "Tus derechos",
+    "derechosP": "Puedes pedirnos en cualquier momento ver tus datos, corregirlos, borrarlos, limitar su uso, oponerte a que los usemos o llevártelos. Basta con escribirnos al email de arriba indicando qué quieres. Si crees que no hemos atendido bien tu petición, puedes reclamar ante la <a href=\"https://www.aepd.es/\" target=\"_blank\" rel=\"noopener\">Agencia Española de Protección de Datos</a>.",
+    "bajaH": "Darte de baja",
+    "bajaP": "Escríbenos por WhatsApp o llámanos al <a href=\"tel:+34633063657\">633 06 36 57</a> y te quitamos de la lista."
+  },
+  "generado": {
+    "_nota": "Textos fijos que escribe el panel (contenido.py) en los bloques de index.html y en cursos/*. Se traducen buscando el texto en castellano: si cambian en contenido.py, hay que cambiarlos aquí también.",
+    "tipos": {
+      "coche": "Coche",
+      "comboCoche": "Combo coche",
+      "supercomboCoche": "Supercombo coche",
+      "moto": "Moto",
+      "comboMoto": "Combo moto",
+      "supercomboMoto": "Supercombo moto"
+    },
+    "precios": {
+      "genericos": "Genéricos",
+      "genericosSub": "Precisión · Stunt driver",
+      "especificos": "Específicos",
+      "especificosSub": "Coche · nivel 1",
+      "proximamente": "Próximamente",
+      "fotoAlt": "Coche circulando sobre dos ruedas en la pista"
+    },
+    "fechas": {
+      "meses": ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+      "cajaFecha": "Fecha",
+      "cajaPor": "Por",
+      "cajaConfirmar": "confirmar",
+      "dias": "días",
+      "plazas": "plazas",
+      "reserva": "Reserva",
+      "masInfo": "Más información",
+      "masInfoAria": "Más información: {titulo}",
+      "sinFechas": "Sin fechas abiertas ahora mismo",
+      "sinFechasTexto": "Estamos preparando las próximas convocatorias. Apúntate a la lista de avisos y te escribimos en cuanto haya fecha.",
+      "avisame": "Avísame"
+    },
+    "curso": {
+      "tituloPagina": "{titulo} — Stunt Drive School",
+      "todasFechas": "← Todas las fechas",
+      "verGrande": "Ver en grande",
+      "proximaFecha": "Próxima fecha",
+      "horario": "Horario",
+      "lugar": "Lugar",
+      "verMapa": "Ver en el mapa ↗",
+      "porConfirmar": "Por confirmar",
+      "nDias": "({n} días)",
+      "precio": "Precio",
+      "plazas": "Plazas",
+      "reservarWhatsApp": "Reservar por WhatsApp",
+      "llamar": "Llamar · {tel}",
+      "sobre": "Sobre el curso",
+      "pronto": "Pronto añadiremos el programa completo. Escríbenos y te lo contamos.",
+      "incluye": "Qué incluye",
+      "comoReservar": "Cómo reservar",
+      "condicionesReserva": "Para confirmar tu plaza hace falta una reserva de {precio} por persona.",
+      "escribenos1": "Escríbenos por WhatsApp o llámanos al",
+      "escribenos2": "y te decimos las plazas que quedan.",
+      "avisameFecha": "Avísame cuando haya fecha →",
+      "compartir": "Compartir este curso",
+      "whatsapp": "Hola, quiero información del curso de {curso}"
+    }
+  }
+}

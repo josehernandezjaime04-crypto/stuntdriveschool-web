@@ -1,0 +1,193 @@
+{
+  "comun": {
+    "nav": {
+      "fechas": "Upcoming dates",
+      "cursos": "Courses & prices",
+      "galeria": "Gallery",
+      "equipo": "About us",
+      "contacto": "Contact"
+    },
+    "reservarPlaza": "Book a place",
+    "menu": "Menu",
+    "inicioAria": "Stunt Drive School — home",
+    "privacidad": "Privacy policy",
+    "idioma": "Language"
+  },
+  "inicio": {
+    "meta": {
+      "titulo": "Stunt Drive School — Driving school for film stunt performers",
+      "descripcion": "Official precision driving school for film and commercial stunt performers: car chases, drifting, two-wheel driving, camera car tracking and motorbikes. Courses in Castellolí (Barcelona)."
+    },
+    "hero": {
+      "alt": "White car driving through a huge burst of flame on the track",
+      "eyebrow1": "Official precision driving school",
+      "eyebrow2": "Stunt driving for film and commercials",
+      "titulo": "Stunt<br>driving<br>for <em>film</em>",
+      "sub": "Techniques used only in film and TV: car chases, smuggler runs, two-wheel driving, drifting and much more. Learn from stunt drivers who do it on set.",
+      "verCursos": "See courses",
+      "bajar": "Scroll down"
+    },
+    "experiencia": {
+      "carruselAria": "Course photos",
+      "carrusel": "carousel",
+      "fotoAnterior": "Previous photo",
+      "fotoSiguiente": "Next photo",
+      "titulo": "What our courses are like",
+      "lead": "You learn on the track, behind the wheel, with stunt drivers who work on real film sets.",
+      "f1": "<strong>Hands-on coaching.</strong> Your instructor corrects you on every run, from outside the car and from the passenger seat.",
+      "f2": "<strong>School cars and bikes.</strong> Track-prepared, so you only have to think about technique.",
+      "f3": "<strong>Small groups.</strong> More time at the wheel, less time waiting your turn.",
+      "f4": "<strong>FAST Parcmotor.</strong> A closed circuit in Castellolí with room to practise every manoeuvre.",
+      "verFechas": "See upcoming dates ↓"
+    },
+    "fechas": {
+      "intro": "Small groups at the FAST Parcmotor circuit in Castellolí. If the course you want isn't listed, drop us a line and we'll let you know when it's next on."
+    },
+    "avisos": {
+      "titulo": "Tell me about new dates",
+      "texto": "Leave your details and we'll get in touch when we open dates for the courses you're interested in. No commitment.",
+      "nombre": "Name",
+      "email": "Email",
+      "telefono": "Phone <span>(optional)</span>",
+      "meInteresa": "I'm interested in",
+      "coche": "Car",
+      "moto": "Motorbike",
+      "especificos": "Specialist",
+      "consentimiento": "I have read and accept the <a href=\"privacidad.html\" target=\"_blank\">privacy policy</a>.",
+      "enviar": "Keep me posted"
+    },
+    "cursos": {
+      "intro": "Level-based training in cars and on motorbikes. Start with precision, then specialise in the technique each scene calls for.",
+      "nota": "The organisers reserve the right to change dates or course content due to internal needs or bad weather."
+    },
+    "galeria": {
+      "titulo": "On track",
+      "intro": "Classes, tests and shoots."
+    },
+    "equipo": {
+      "intro": "Two working stunt professionals who have spent years coordinating and shooting driving scenes for film and commercials, in Spain and abroad.",
+      "fotoAlt": "Oriol Tarrida and Jordi Nebot next to one of the school's cars at the circuit",
+      "oriolAlt": "Portrait of Oriol Tarrida",
+      "oriolRol": "Film-grade precision. Leadership on set.",
+      "oriolBio": "CEO of Stunts Tarrida Team and an established stunt performer. His speciality: pushing vehicles to the limit in front of the camera. Now he's putting all that experience within your reach.",
+      "jordiAlt": "Portrait of Jordi Nebot",
+      "jordiRol": "Picture vehicles. Total control.",
+      "jordiBio": "CEO of TyreAction and Precision Driver. He brings his perspective as an action coordinator and years of international shoots to take technical driving to the next level."
+    },
+    "posters": {
+      "aria": "Productions our team has worked on",
+      "label": "Productions our team has worked on"
+    },
+    "contacto": {
+      "titulo": "Ready to<br>get in?",
+      "lead": "Ask us about dates, available places or which course suits your experience.",
+      "telefono": "Phone",
+      "whatsapp": "<span>WhatsApp</span>Message us",
+      "donde": "Where"
+    },
+    "mas": {
+      "label": "More services",
+      "oriol": "Action coordinator",
+      "tyreaction": "Picture vehicles and automotive services for film"
+    }
+  },
+  "formulario": {
+    "errNombre": "Please enter your name.",
+    "errEmail": "Please check your email.",
+    "errTelefono": "Please check your phone number (digits only).",
+    "errConsentimiento": "You need to accept the privacy policy.",
+    "enviando": "Sending…",
+    "hecho": "Done! We'll let you know when there are new dates.",
+    "errEnvio": "We couldn't send it. Please try again.",
+    "errConexion": "We can't save your request right now. Message us on WhatsApp at +34 633 06 36 57.",
+    "enlaceCopiado": "Link copied"
+  },
+  "servidor": {
+    "datosNoValidos": "Invalid data.",
+    "demasiadoGrandes": "Too much data.",
+    "demasiadosIntentos": "Too many attempts. Please try again in a few minutes.",
+    "robot": "We couldn't verify that you're not a robot. Please reload the page.",
+    "origen": "Origin not allowed."
+  },
+  "privacidad": {
+    "meta": {
+      "titulo": "Privacy policy — Stunt Drive School"
+    },
+    "volver": "Back",
+    "inicio": "Home",
+    "miga": "Privacy",
+    "fecha": "Mailing list · November 2026 version",
+    "quienH": "Who processes your data",
+    "quienP": "The data controller is <strong>TYREACTION, S.L.</strong>, owner of Stunt Drive School. You can call us or message us on WhatsApp at <a href=\"tel:+34633063657\">+34 633 06 36 57</a>.",
+    "datosH": "What data we collect and why",
+    "datosP": "When you join our mailing list we store your name, your email, your phone number if you give it to us and the types of course you're interested in. We only use them to let you know when we open new dates or intakes for our courses. We don't use them for anything else and we don't build profiles.",
+    "baseH": "Why we're allowed to do this",
+    "baseP": "Because you give us your consent by ticking the box on the form. You can withdraw it whenever you like, without giving any reason.",
+    "plazoH": "How long we keep it",
+    "plazoP": "Until you ask us to remove you. When you do, we delete your data from the list.",
+    "dondeH": "Where it is stored and who can see it",
+    "dondeP": "The data is stored on our own encrypted server in Spain, with no public access. We don't sell it or share it with anyone. To protect the form from automated submissions we use Cloudflare, which processes your IP address for technical purposes to check that you're not a robot; it doesn't receive the rest of your data.",
+    "derechosH": "Your rights",
+    "derechosP": "You can ask us at any time to see your data, correct it, delete it, restrict its use, object to us using it or take it with you. Just write to us at the email above saying what you'd like. If you feel we haven't handled your request properly, you can file a complaint with the <a href=\"https://www.aepd.es/\" target=\"_blank\" rel=\"noopener\">Agencia Española de Protección de Datos</a> (Spanish Data Protection Agency).",
+    "bajaH": "Unsubscribing",
+    "bajaP": "Message us on WhatsApp or call us at <a href=\"tel:+34633063657\">+34 633 06 36 57</a> and we'll take you off the list."
+  },
+  "generado": {
+    "_nota": "Fixed texts written by the admin panel (contenido.py).",
+    "tipos": {
+      "coche": "Car",
+      "comboCoche": "Car combo",
+      "supercomboCoche": "Car supercombo",
+      "moto": "Motorbike",
+      "comboMoto": "Motorbike combo",
+      "supercomboMoto": "Motorbike supercombo"
+    },
+    "precios": {
+      "genericos": "Core courses",
+      "genericosSub": "Precision · Stunt driver",
+      "especificos": "Specialist",
+      "especificosSub": "Car · level 1",
+      "proximamente": "Coming soon",
+      "fotoAlt": "Car driving on two wheels on the track"
+    },
+    "fechas": {
+      "meses": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      "cajaFecha": "Date",
+      "cajaPor": "To be",
+      "cajaConfirmar": "confirmed",
+      "dias": "days",
+      "plazas": "places",
+      "reserva": "Deposit",
+      "masInfo": "More info",
+      "masInfoAria": "More info: {titulo}",
+      "sinFechas": "No open dates right now",
+      "sinFechasTexto": "We're putting the next courses together. Join the mailing list and we'll write to you as soon as there's a date.",
+      "avisame": "Notify me"
+    },
+    "curso": {
+      "tituloPagina": "{titulo} — Stunt Drive School",
+      "todasFechas": "← All dates",
+      "verGrande": "View full size",
+      "proximaFecha": "Next date",
+      "horario": "Times",
+      "lugar": "Venue",
+      "verMapa": "View on map ↗",
+      "porConfirmar": "To be confirmed",
+      "nDias": "({n} days)",
+      "precio": "Price",
+      "plazas": "Places",
+      "reservarWhatsApp": "Book on WhatsApp",
+      "llamar": "Call · {tel}",
+      "sobre": "About the course",
+      "pronto": "We'll be adding the full programme soon. Get in touch and we'll tell you all about it.",
+      "incluye": "What's included",
+      "comoReservar": "How to book",
+      "condicionesReserva": "A deposit of {precio} per person is required to confirm your place.",
+      "escribenos1": "Message us on WhatsApp or call us at",
+      "escribenos2": "and we'll tell you how many places are left.",
+      "avisameFecha": "Notify me when there's a date →",
+      "compartir": "Share this course",
+      "whatsapp": "Hi, I'd like information about the course {curso}"
+    }
+  }
+}

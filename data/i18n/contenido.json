@@ -1,0 +1,70 @@
+{
+  "_nota": "Traducciones del contenido que se edita desde el panel (data/contenido.json). La clave es el texto en castellano tal cual está en el panel (si es un texto de varias líneas que la página parte en párrafos, va una entrada por línea). Si Oriol cambia un texto en el panel, su traducción deja de coincidir y la web muestra el castellano hasta que se añada aquí la nueva. Si falta un idioma en una entrada, también se muestra el castellano.",
+  "textos": {
+    "Nivel 1": { "ca": "Nivell 1", "en": "Level 1" },
+    "Nivel 2": { "ca": "Nivell 2", "en": "Level 2" },
+    "Nivel 3": { "ca": "Nivell 3", "en": "Level 3" },
+    "Niveles 1 y 2": { "ca": "Nivells 1 i 2", "en": "Levels 1 and 2" },
+    "Supercombo · niveles 1, 2 y 3": { "ca": "Supercombo · nivells 1, 2 i 3", "en": "Supercombo · levels 1, 2 and 3" },
+    "Con moto de la escuela": { "ca": "Amb moto de l'escola", "en": "With a school bike" },
+    "Con moto propia": { "ca": "Amb moto pròpia", "en": "With your own bike" },
+    "Drift": { "ca": "Drift", "en": "Drift" },
+    "Easy drift": { "ca": "Easy drift", "en": "Easy drift" },
+    "Seguimiento de camera car": { "ca": "Seguiment de camera car", "en": "Camera car tracking" },
+    "Dos ruedas": { "ca": "Dues rodes", "en": "Two-wheel driving" },
+
+    "Nuevo curso Super combo": { "ca": "Nou curs Super combo", "en": "New Super combo course" },
+    "CURSO SUPER COMBO | Domina el asfalto como un profesional\nEl programa más completo de Stunt Drive School. Diseñado para quienes quieren llevar su conducción al siguiente nivel sin dejarse nada en el tintero. En este curso intensivo aprenderás a controlar el coche en situaciones extremas, uniendo maniobras de precisión, derrapes controlados, giros de 180º y técnicas de evasión.\nSiente la adrenalina de una persecución de cine con la máxima seguridad.": {
+      "ca": "CURS SUPER COMBO | Domina l'asfalt com un professional\nEl programa més complet de Stunt Drive School. Pensat per a qui vol portar la seva conducció al nivell següent sense deixar-se res. En aquest curs intensiu aprendràs a controlar el cotxe en situacions extremes, combinant maniobres de precisió, derrapades controlades, girs de 180º i tècniques d'evasió.\nSent l'adrenalina d'una persecució de cinema amb la màxima seguretat.",
+      "en": "SUPER COMBO COURSE | Master the tarmac like a pro\nStunt Drive School's most complete programme. Designed for those who want to take their driving to the next level and leave nothing out. On this intensive course you'll learn to control the car in extreme situations, combining precision manoeuvres, controlled slides, 180º turns and evasive driving techniques.\nFeel the adrenaline of a movie car chase with maximum safety."
+    },
+    "Domina el asfalto como un profesional": { "ca": "Domina l'asfalt com un professional", "en": "Master the tarmac like a pro" },
+    "09:00 a 18:00 h": { "ca": "De 09:00 a 18:00 h", "en": "09:00 to 18:00" },
+    "CURSO SUPER COMBO | La experiencia definitiva (3 Días)": { "ca": "CURS SUPER COMBO | L'experiència definitiva (3 dies)", "en": "SUPER COMBO COURSE | The ultimate experience (3 days)" },
+    "El programa más completo de Stunt Drive School. Diseñado para quienes quieren llevar su conducción al siguiente nivel sin dejarse nada en el tintero. En este curso intensivo aprenderás a controlar el coche en situaciones extremas, uniendo maniobras de precisión, derrapes controlados, giros de 180º y técnicas de evasión.": {
+      "ca": "El programa més complet de Stunt Drive School. Pensat per a qui vol portar la seva conducció al nivell següent sense deixar-se res. En aquest curs intensiu aprendràs a controlar el cotxe en situacions extremes, combinant maniobres de precisió, derrapades controlades, girs de 180º i tècniques d'evasió.",
+      "en": "Stunt Drive School's most complete programme. Designed for those who want to take their driving to the next level and leave nothing out. On this intensive course you'll learn to control the car in extreme situations, combining precision manoeuvres, controlled slides, 180º turns and evasive driving techniques."
+    },
+    "Tres días, tres niveles:": { "ca": "Tres dies, tres nivells:", "en": "Three days, three levels:" },
+    "Día 1 | Nivel 1: Control y Técnica. Domina las dinámicas del vehículo. Entenderás la transferencia de pesos, el control del subviraje y sobreviraje, las frenadas de emergencia y el slalom de precisión. Es la base fundamental para aprender a llevar el coche exactamente donde tú decidas.": {
+      "ca": "Dia 1 | Nivell 1: Control i Tècnica. Domina la dinàmica del vehicle. Entendràs la transferència de pesos, el control del subviratge i del sobreviratge, les frenades d'emergència i l'eslàlom de precisió. És la base fonamental per aprendre a portar el cotxe exactament on tu decideixis.",
+      "en": "Day 1 | Level 1: Control and Technique. Master vehicle dynamics. You'll learn about weight transfer, controlling understeer and oversteer, emergency braking and precision slalom. It's the essential foundation for putting the car exactly where you want it."
+    },
+    "Día 2 | Nivel 2: Precisión y Avanzado. Entramos en la acción técnica. Perfeccionamiento de maniobras extremas con total control: giros de 180º marcha adelante, giros de 180º marcha atrás (J-Turns), derrapes sostenidos y técnicas de evasión en espacios reducidos.": {
+      "ca": "Dia 2 | Nivell 2: Precisió i Avançat. Entrem en l'acció tècnica. Perfeccionament de maniobres extremes amb control total: girs de 180º endavant, girs de 180º marxa enrere (J-Turns), derrapades sostingudes i tècniques d'evasió en espais reduïts.",
+      "en": "Day 2 | Level 2: Precision and Advanced. Now we get into technical action. Refining extreme manoeuvres with total control: forward 180º turns, reverse 180º turns (J-turns), sustained slides and evasive techniques in tight spaces."
+    },
+    "Día 3 | Nivel 3: Stunt y Escenas Reales. La culminación del programa. Aplicamos toda la técnica aprendida en coreografías de acción reales. Conducción a centímetros del objetivo, respeto de marcas para cámara y ejecución de maniobras complejas dentro de una persecución simulada.": {
+      "ca": "Dia 3 | Nivell 3: Stunt i Escenes Reals. La culminació del programa. Apliquem tota la tècnica apresa en coreografies d'acció reals. Conducció a centímetres de l'objectiu, respecte de les marques de càmera i execució de maniobres complexes dins d'una persecució simulada.",
+      "en": "Day 3 | Level 3: Stunts and Real Scenes. The culmination of the programme. We apply everything you've learned to real action choreography. Driving within centimetres of the target, hitting camera marks and performing complex manoeuvres in a simulated chase."
+    },
+    "Detalles de la experiencia:": { "ca": "Detalls de l'experiència:", "en": "Course details:" },
+    "Duración: 3 jornadas intensivas de 8 horas cada día.": { "ca": "Durada: 3 jornades intensives de 8 hores cada dia.", "en": "Duration: 3 intensive 8-hour days." },
+    "Formato: Grupos muy reducidos, 2 personas por coche para garantizar la máxima práctica al volante.": { "ca": "Format: grups molt reduïts, 2 persones per cotxe per garantir la màxima pràctica al volant.", "en": "Format: very small groups, 2 people per car to guarantee as much time at the wheel as possible." },
+    "Todo incluido: Vehículos preparados, seguro y gasolina cubiertos.": { "ca": "Tot inclòs: vehicles preparats, assegurança i benzina coberts.", "en": "All inclusive: prepared vehicles, insurance and fuel covered." },
+    "Las ganas de aprender y la adrenalina... las pones tú.": { "ca": "Les ganes d'aprendre i l'adrenalina... les poses tu.", "en": "The will to learn and the adrenaline... those are on you." },
+
+    "Moto · Nivel 1": { "ca": "Moto · Nivell 1", "en": "Motorbike · Level 1" },
+    "Iniciación a la conducción de moto de precisión para cine: slaloms, salidas, derrapes y trazadas. Incluye moto adaptada, instalaciones y seguro de pista. Hay cascos, pero recomendamos traer el tuyo.": {
+      "ca": "Iniciació a la conducció de moto de precisió per a cinema: eslàloms, sortides, derrapades i traçades. Inclou moto adaptada, instal·lacions i assegurança de pista. Hi ha cascos, però et recomanem que portis el teu.",
+      "en": "An introduction to precision motorbike riding for film: slaloms, starts, slides and racing lines. Includes an adapted bike, facilities and track insurance. Helmets are available, but we recommend bringing your own."
+    },
+    "Curso de iniciación a la conducción de moto de precisión para cine": { "ca": "Curs d'iniciació a la conducció de moto de precisió per a cinema", "en": "Introductory course in precision motorbike riding for film" },
+    "Curso de iniciación a la conducción de moto para cine: slaloms, salidas, derrapes y trazadas.": { "ca": "Curs d'iniciació a la conducció de moto per a cinema: eslàloms, sortides, derrapades i traçades.", "en": "Introductory course in motorbike riding for film: slaloms, starts, slides and racing lines." },
+    "Precio con moto de la escuela: 310 €. Si vienes con tu propia moto: 250 €.": { "ca": "Preu amb moto de l'escola: 310 €. Si vens amb la teva moto: 250 €.", "en": "Price with a school bike: 310 €. If you bring your own bike: 250 €." },
+    "Moto adaptada": { "ca": "Moto adaptada", "en": "Adapted motorbike" },
+    "Instalaciones del circuito": { "ca": "Instal·lacions del circuit", "en": "Circuit facilities" },
+    "Seguro de pista": { "ca": "Assegurança de pista", "en": "Track insurance" },
+    "Casco (aunque recomendamos traer el tuyo)": { "ca": "Casc (tot i que et recomanem que portis el teu)", "en": "Helmet (though we recommend bringing your own)" },
+
+    "Instructor dando indicaciones a un alumno al volante en la pista": { "ca": "Instructor donant indicacions a un alumne al volant a la pista", "en": "Instructor giving directions to a student at the wheel on the track" },
+    "Dos alumnos en moto preparados para empezar un ejercicio": { "ca": "Dos alumnes en moto preparats per començar un exercici", "en": "Two students on motorbikes ready to start an exercise" },
+    "Nissan 370Z rojo de la escuela en el circuito": { "ca": "Nissan 370Z vermell de l'escola al circuit", "en": "The school's red Nissan 370Z at the circuit" },
+    "Nissan 370Z descapotable de la escuela en el circuito": { "ca": "Nissan 370Z descapotable de l'escola al circuit", "en": "The school's convertible Nissan 370Z at the circuit" },
+    "Coche negro levantado sobre dos ruedas": { "ca": "Cotxe negre aixecat sobre dues rodes", "en": "Black car up on two wheels" },
+    "Coche de la escuela frenando sobre pista mojada": { "ca": "Cotxe de l'escola frenant sobre pista mullada", "en": "School car braking on a wet track" },
+    "Deportivo derrapando en pista": { "ca": "Esportiu derrapant a la pista", "en": "Sports car drifting on the track" },
+    "Monitor de cámara durante un plano de persecución": { "ca": "Monitor de càmera durant un pla de persecució", "en": "Camera monitor during a chase shot" },
+    "Camera car siguiendo a un coche en la pista": { "ca": "Camera car seguint un cotxe a la pista", "en": "Camera car following a car on the track" }
+  }
+}
