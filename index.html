@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stunt Drive School — Escuela de conducción para especialistas de cine</title>
-<meta name="description" content="Escuela oficial de conducción de precisión para especialistas de cine y publicidad: persecuciones, drift, coches a dos ruedas, seguimiento con camera car y moto. Cursos en Castellolí (Barcelona).">
+<title data-i18n="inicio.meta.titulo">Stunt Drive School — Escuela de conducción para especialistas de cine</title>
+<meta name="description" data-i18n-attr="content:inicio.meta.descripcion" content="Escuela oficial de conducción de precisión para especialistas de cine y publicidad: persecuciones, drift, coches a dos ruedas, seguimiento con camera car y moto. Cursos en Castellolí (Barcelona).">
 <meta name="theme-color" content="#0b0a0a">
 <link rel="icon" type="image/png" href="assets/brand/stuntdriveschool-logo.png">
 
@@ -17,7 +17,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/img/hero-fuego.jpg" fetchpriority="high">
-<link rel="stylesheet" href="css/style.css?v=24">
+<link rel="stylesheet" href="css/style.css?v=25">
+<script src="js/i18n.js?v=7"></script>
 </head>
 <body>
 
@@ -25,21 +26,26 @@
 
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
-    <a href="#top" class="logo-link" aria-label="Stunt Drive School — inicio">
+    <a href="#top" class="logo-link" aria-label="Stunt Drive School — inicio" data-i18n-attr="aria-label:comun.inicioAria">
       <img src="assets/brand/stuntdriveschool-logo.png" width="1063" height="301" alt="Stunt Drive School" class="logo-img">
     </a>
 
     <nav class="main-nav" id="mainNav">
-      <a href="#fechas">Próximas fechas</a>
-      <a href="#cursos">Cursos y precios</a>
-      <a href="#galeria">Galería</a>
-      <a href="#equipo">Quiénes somos</a>
-      <a href="#contacto">Contacto</a>
+      <a href="#fechas" data-i18n="comun.nav.fechas">Próximas fechas</a>
+      <a href="#cursos" data-i18n="comun.nav.cursos">Cursos y precios</a>
+      <a href="#galeria" data-i18n="comun.nav.galeria">Galería</a>
+      <a href="#equipo" data-i18n="comun.nav.equipo">Quiénes somos</a>
+      <a href="#contacto" data-i18n="comun.nav.contacto">Contacto</a>
     </nav>
 
     <div class="header-actions">
-      <a href="#contacto" class="btn btn-small">Reservar plaza</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menú" aria-expanded="false">
+      <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:comun.idioma">
+        <button type="button" data-lang="ca" lang="ca" title="Català">CA</button>
+        <button type="button" data-lang="es" lang="es" title="Castellano" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" lang="en" title="English">EN</button>
+      </div>
+      <a href="#contacto" class="btn btn-small" data-i18n="comun.reservarPlaza">Reservar plaza</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú" data-i18n-attr="aria-label:comun.menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -51,27 +57,27 @@
   <!-- ===== HERO ===== -->
   <section class="hero" id="top">
     <div class="hero-photo" id="heroPhoto">
-      <img src="assets/img/hero-fuego.jpg" alt="Coche blanco atravesando una gran llamarada de fuego en pista" fetchpriority="high">
+      <img src="assets/img/hero-fuego.jpg" alt="Coche blanco atravesando una gran llamarada de fuego en pista" data-i18n-attr="alt:inicio.hero.alt" fetchpriority="high">
     </div>
     <div class="hero-scrim"></div>
     <div class="hero-content" id="heroContent">
-      <p class="eyebrow"><span>Escuela oficial de precisión</span><span>Stunt driver para cine y publicidad</span></p>
-      <h1 class="hero-title">Cursos de<br>conducción<br>para <em>cine</em></h1>
-      <p class="hero-sub">Técnicas exclusivas del sector audiovisual: persecuciones, contrabandistas, coches a dos ruedas, drift y mucho más. Aprende con especialistas que lo hacen en rodaje.</p>
+      <p class="eyebrow"><span data-i18n="inicio.hero.eyebrow1">Escuela oficial de precisión</span><span data-i18n="inicio.hero.eyebrow2">Stunt driver para cine y publicidad</span></p>
+      <h1 class="hero-title" data-i18n-html="inicio.hero.titulo">Cursos de<br>conducción<br>para <em>cine</em></h1>
+      <p class="hero-sub" data-i18n="inicio.hero.sub">Técnicas exclusivas del sector audiovisual: persecuciones, contrabandistas, coches a dos ruedas, drift y mucho más. Aprende con especialistas que lo hacen en rodaje.</p>
       <div class="hero-ctas">
-        <a href="#cursos" class="btn">Ver cursos</a>
-        <a href="#fechas" class="btn btn-ghost">Próximas fechas</a>
+        <a href="#cursos" class="btn" data-i18n="inicio.hero.verCursos">Ver cursos</a>
+        <a href="#fechas" class="btn btn-ghost" data-i18n="comun.nav.fechas">Próximas fechas</a>
       </div>
     </div>
     <p class="hero-motto">Castellolí · Barcelona</p>
-    <a href="#experiencia" class="scroll-cue" aria-label="Bajar"><span></span></a>
+    <a href="#experiencia" class="scroll-cue" aria-label="Bajar" data-i18n-attr="aria-label:inicio.hero.bajar"><span></span></a>
   </section>
 
   <!-- ===== ASÍ SON NUESTROS CURSOS ===== -->
   <section class="section curso-vivo" id="experiencia">
     <div class="vivo-grid">
       <div class="vivo-media reveal">
-        <div class="slideshow" id="cursoSlideshow" aria-roledescription="carrusel" aria-label="Fotos de los cursos">
+        <div class="slideshow" id="cursoSlideshow" aria-roledescription="carrusel" aria-label="Fotos de los cursos" data-i18n-attr="aria-roledescription:inicio.experiencia.carrusel;aria-label:inicio.experiencia.carruselAria">
         <!-- contenido:carrusel -->
         <img class="slide active" src="assets/img/carrusel/clase-cupra.jpg" alt="Instructor dando indicaciones a un alumno al volante en la pista">
         <img class="slide" src="assets/img/carrusel/clase-moto.jpg" alt="Dos alumnos en moto preparados para empezar un ejercicio" loading="lazy">
@@ -79,21 +85,21 @@
         <img class="slide" src="assets/img/carrusel/nissan-flota.jpg" alt="Nissan 370Z descapotable de la escuela en el circuito" loading="lazy">
         <!-- /contenido:carrusel -->
           <div class="slide-progress" aria-hidden="true"></div>
-          <button type="button" class="slide-arrow prev" aria-label="Foto anterior">&#10094;</button>
-          <button type="button" class="slide-arrow next" aria-label="Foto siguiente">&#10095;</button>
+          <button type="button" class="slide-arrow prev" aria-label="Foto anterior" data-i18n-attr="aria-label:inicio.experiencia.fotoAnterior">&#10094;</button>
+          <button type="button" class="slide-arrow next" aria-label="Foto siguiente" data-i18n-attr="aria-label:inicio.experiencia.fotoSiguiente">&#10095;</button>
         </div>
       </div>
       <div class="vivo-text reveal">
         <span class="sec-index">01</span>
-        <h2>Así son nuestros cursos</h2>
-        <p class="lead">Se aprende en pista, al volante, con especialistas que conducen en rodajes de verdad.</p>
+        <h2 data-i18n="inicio.experiencia.titulo">Así son nuestros cursos</h2>
+        <p class="lead" data-i18n="inicio.experiencia.lead">Se aprende en pista, al volante, con especialistas que conducen en rodajes de verdad.</p>
         <ul class="features">
-          <li><strong>Instrucción a pie de coche.</strong> El instructor te corrige en cada pasada, desde fuera y desde dentro.</li>
-          <li><strong>Coches y motos de la escuela.</strong> Preparados para pista, para que solo te preocupes de la técnica.</li>
-          <li><strong>Grupos reducidos.</strong> Más tiempo al volante y menos esperando turno.</li>
-          <li><strong>FAST Parcmotor.</strong> Un circuito cerrado en Castellolí, con espacio para practicar cada maniobra.</li>
+          <li data-i18n-html="inicio.experiencia.f1"><strong>Instrucción a pie de coche.</strong> El instructor te corrige en cada pasada, desde fuera y desde dentro.</li>
+          <li data-i18n-html="inicio.experiencia.f2"><strong>Coches y motos de la escuela.</strong> Preparados para pista, para que solo te preocupes de la técnica.</li>
+          <li data-i18n-html="inicio.experiencia.f3"><strong>Grupos reducidos.</strong> Más tiempo al volante y menos esperando turno.</li>
+          <li data-i18n-html="inicio.experiencia.f4"><strong>FAST Parcmotor.</strong> Un circuito cerrado en Castellolí, con espacio para practicar cada maniobra.</li>
         </ul>
-        <div class="text-links"><a href="#fechas">Ver próximas fechas ↓</a></div>
+        <div class="text-links"><a href="#fechas" data-i18n="inicio.experiencia.verFechas">Ver próximas fechas ↓</a></div>
       </div>
     </div>
   </section>
@@ -102,8 +108,8 @@
   <section class="section section-tight" id="fechas">
     <div class="section-head reveal">
       <span class="sec-index">02</span>
-      <h2>Próximas fechas</h2>
-      <p>Grupos reducidos en el circuito FAST Parcmotor de Castellolí. Si te interesa un curso que no aparece, escríbenos y te avisamos de la próxima convocatoria.</p>
+      <h2 data-i18n="comun.nav.fechas">Próximas fechas</h2>
+      <p data-i18n="inicio.fechas.intro">Grupos reducidos en el circuito FAST Parcmotor de Castellolí. Si te interesa un curso que no aparece, escríbenos y te avisamos de la próxima convocatoria.</p>
     </div>
     <!-- contenido:fechas -->
     <article class="event event-con-foto reveal">
@@ -142,30 +148,30 @@ Siente la adrenalina de una persecución de cine con la máxima seguridad.</p>
     <!-- Lista de interesados: los datos van al servicio del minipc (data-api) -->
     <div class="notify reveal" id="avisos">
       <div class="notify-text">
-        <h3>Avísame de nuevas fechas</h3>
-        <p>Déjanos tus datos y te escribimos cuando abramos convocatoria de los cursos que te interesan. Sin compromiso.</p>
+        <h3 data-i18n="inicio.avisos.titulo">Avísame de nuevas fechas</h3>
+        <p data-i18n="inicio.avisos.texto">Déjanos tus datos y te escribimos cuando abramos convocatoria de los cursos que te interesan. Sin compromiso.</p>
       </div>
       <form class="notify-form" id="avisosForm" novalidate
             data-api="https://stuntdriveschool-registro.tail077ef1.ts.net/interesados"
             data-sitekey="0x4AAAAAAFyx1kmdXgqo5bX-">
         <div class="field">
-          <label for="avNombre">Nombre</label>
+          <label for="avNombre" data-i18n="inicio.avisos.nombre">Nombre</label>
           <input id="avNombre" name="nombre" type="text" autocomplete="name" maxlength="80" required>
         </div>
         <div class="field">
-          <label for="avEmail">Email</label>
+          <label for="avEmail" data-i18n="inicio.avisos.email">Email</label>
           <input id="avEmail" name="email" type="email" autocomplete="email" maxlength="254" required>
         </div>
         <div class="field">
-          <label for="avTel">Teléfono <span>(opcional)</span></label>
+          <label for="avTel" data-i18n-html="inicio.avisos.telefono">Teléfono <span>(opcional)</span></label>
           <input id="avTel" name="telefono" type="tel" autocomplete="tel" maxlength="20" inputmode="tel">
         </div>
         <fieldset class="field">
-          <legend>Me interesa</legend>
+          <legend data-i18n="inicio.avisos.meInteresa">Me interesa</legend>
           <div class="chips">
-            <label class="chip"><input type="checkbox" name="intereses" value="coche"> Coche</label>
-            <label class="chip"><input type="checkbox" name="intereses" value="moto"> Moto</label>
-            <label class="chip"><input type="checkbox" name="intereses" value="especificos"> Específicos</label>
+            <label class="chip"><input type="checkbox" name="intereses" value="coche"> <span data-i18n="inicio.avisos.coche">Coche</span></label>
+            <label class="chip"><input type="checkbox" name="intereses" value="moto"> <span data-i18n="inicio.avisos.moto">Moto</span></label>
+            <label class="chip"><input type="checkbox" name="intereses" value="especificos"> <span data-i18n="inicio.avisos.especificos">Específicos</span></label>
           </div>
         </fieldset>
         <div class="hp" aria-hidden="true">
@@ -174,11 +180,11 @@ Siente la adrenalina de una persecución de cine con la máxima seguridad.</p>
         </div>
         <label class="consent">
           <input type="checkbox" name="consentimiento" required>
-          <span>He leído y acepto la <a href="privacidad.html" target="_blank">política de privacidad</a>.</span>
+          <span data-i18n-html="inicio.avisos.consentimiento">He leído y acepto la <a href="privacidad.html" target="_blank">política de privacidad</a>.</span>
         </label>
         <div class="turnstile" id="avTurnstile"></div>
         <div class="notify-actions">
-          <button type="submit" class="btn">Quiero que me aviséis</button>
+          <button type="submit" class="btn" data-i18n="inicio.avisos.enviar">Quiero que me aviséis</button>
           <p class="notify-msg" id="avisosMsg" role="status" aria-live="polite"></p>
         </div>
       </form>
@@ -189,8 +195,8 @@ Siente la adrenalina de una persecución de cine con la máxima seguridad.</p>
   <section class="section section-tight" id="cursos">
     <div class="section-head reveal">
       <span class="sec-index">03</span>
-      <h2>Cursos y precios</h2>
-      <p>Formación por niveles en coche y moto. Empieza por la precisión y especialízate en la técnica que pide cada escena.</p>
+      <h2 data-i18n="comun.nav.cursos">Cursos y precios</h2>
+      <p data-i18n="inicio.cursos.intro">Formación por niveles en coche y moto. Empieza por la precisión y especialízate en la técnica que pide cada escena.</p>
     </div>
 
     <!-- contenido:cursos -->
@@ -221,15 +227,15 @@ Siente la adrenalina de una persecución de cine con la máxima seguridad.</p>
       </div>
     </div>
     <!-- /contenido:cursos -->
-    <p class="course-note reveal">La organización se reserva el derecho de modificar fechas o temario según necesidades internas o inclemencias del tiempo.</p>
+    <p class="course-note reveal" data-i18n="inicio.cursos.nota">La organización se reserva el derecho de modificar fechas o temario según necesidades internas o inclemencias del tiempo.</p>
   </section>
 
   <!-- ===== GALERÍA ===== -->
   <section class="section" id="galeria">
     <div class="section-head reveal">
       <span class="sec-index">04</span>
-      <h2>En pista</h2>
-      <p>Clases, pruebas y rodajes.</p>
+      <h2 data-i18n="inicio.galeria.titulo">En pista</h2>
+      <p data-i18n="inicio.galeria.intro">Clases, pruebas y rodajes.</p>
     </div>
     <div class="gallery">
       <!-- contenido:galeria -->
@@ -251,27 +257,27 @@ Siente la adrenalina de una persecución de cine con la máxima seguridad.</p>
     <div class="equipo-head">
       <div class="section-head reveal">
         <span class="sec-index">05</span>
-        <h2>Quiénes somos</h2>
-        <p>Dos especialistas en activo que llevan años coordinando y rodando escenas de conducción en cine y publicidad, nacionales e internacionales.</p>
+        <h2 data-i18n="comun.nav.equipo">Quiénes somos</h2>
+        <p data-i18n="inicio.equipo.intro">Dos especialistas en activo que llevan años coordinando y rodando escenas de conducción en cine y publicidad, nacionales e internacionales.</p>
       </div>
-      <figure class="team-photo reveal"><img src="assets/img/equipo.jpg?v=ede46cc6" alt="Oriol Tarrida y Jordi Nebot junto a un coche de la escuela en el circuito" loading="lazy"></figure>
+      <figure class="team-photo reveal"><img src="assets/img/equipo.jpg?v=ede46cc6" alt="Oriol Tarrida y Jordi Nebot junto a un coche de la escuela en el circuito" data-i18n-attr="alt:inicio.equipo.fotoAlt" loading="lazy"></figure>
     </div>
     <div class="team">
       <article class="member reveal">
-        <img src="assets/img/oriol.jpg" alt="Retrato de Oriol Tarrida" loading="lazy">
+        <img src="assets/img/oriol.jpg" alt="Retrato de Oriol Tarrida" data-i18n-attr="alt:inicio.equipo.oriolAlt" loading="lazy">
         <div class="member-info">
-          <span class="member-role">Precisión de cine. Liderazgo en el set.</span>
+          <span class="member-role" data-i18n="inicio.equipo.oriolRol">Precisión de cine. Liderazgo en el set.</span>
           <h3>Oriol Tarrida</h3>
-          <p>CEO de Stunts Tarrida Team y especialista de acción consolidado. Su especialidad: llevar los vehículos al extremo frente a las cámaras. Ahora, pone toda esa experiencia a tu alcance.</p>
+          <p data-i18n="inicio.equipo.oriolBio">CEO de Stunts Tarrida Team y especialista de acción consolidado. Su especialidad: llevar los vehículos al extremo frente a las cámaras. Ahora, pone toda esa experiencia a tu alcance.</p>
           <div class="text-links"><a href="https://orioltarrida.com/" target="_blank" rel="noopener">Portfolio ↗</a></div>
         </div>
       </article>
       <article class="member reveal">
-        <img src="assets/img/jordi.jpg" alt="Retrato de Jordi Nebot" loading="lazy">
+        <img src="assets/img/jordi.jpg" alt="Retrato de Jordi Nebot" data-i18n-attr="alt:inicio.equipo.jordiAlt" loading="lazy">
         <div class="member-info">
-          <span class="member-role">Vehículos de cine. Control absoluto.</span>
+          <span class="member-role" data-i18n="inicio.equipo.jordiRol">Vehículos de cine. Control absoluto.</span>
           <h3>Jordi Nebot</h3>
-          <p>CEO de TyreAction y Precision Driver. Aporta su visión como coordinador de acción y años de rodajes internacionales para llevar la conducción técnica al siguiente nivel.</p>
+          <p data-i18n="inicio.equipo.jordiBio">CEO de TyreAction y Precision Driver. Aporta su visión como coordinador de acción y años de rodajes internacionales para llevar la conducción técnica al siguiente nivel.</p>
           <div class="text-links"><a href="https://www.imdb.com/name/nm5770910/" target="_blank" rel="noopener">IMDb ↗</a></div>
         </div>
       </article>
@@ -279,8 +285,8 @@ Siente la adrenalina de una persecución de cine con la máxima seguridad.</p>
   </section>
 
   <!-- ===== CASOS DE ÉXITO ===== -->
-  <div class="posters" aria-label="Producciones en las que ha trabajado el equipo">
-    <p class="posters-label">Producciones en las que ha participado nuestro equipo</p>
+  <div class="posters" aria-label="Producciones en las que ha trabajado el equipo" data-i18n-attr="aria-label:inicio.posters.aria">
+    <p class="posters-label" data-i18n="inicio.posters.label">Producciones en las que ha participado nuestro equipo</p>
     <div class="posters-track" id="postersTrack">
       <!-- contenido:posters -->
       <ul class="posters-group"><li><img src="assets/img/posters/p01.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p02.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p03.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p04.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p05.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p06.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p07.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p08.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p09.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p10.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p11.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p12.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p13.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p14.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p15.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p16.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p17.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p18.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p19.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p20.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p21.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p22.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p23.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p24.jpg" alt="" height="190"></li><li><img src="assets/img/posters/p25.jpg" alt="" height="190"></li></ul>
@@ -292,31 +298,31 @@ Siente la adrenalina de una persecución de cine con la máxima seguridad.</p>
   <section class="contact" id="contacto">
     <div class="contact-inner reveal">
       <span class="sec-index">06</span>
-      <h2>¿Te subes<br>al coche?</h2>
-      <p class="lead">Pregúntanos por fechas, plazas libres o qué curso encaja con tu experiencia.</p>
+      <h2 data-i18n-html="inicio.contacto.titulo">¿Te subes<br>al coche?</h2>
+      <p class="lead" data-i18n="inicio.contacto.lead">Pregúntanos por fechas, plazas libres o qué curso encaja con tu experiencia.</p>
       <div class="contact-grid cols-3">
-        <a href="tel:+34633063657" class="contact-item"><span>Teléfono</span>633 06 36 57</a>
-        <a href="https://wa.me/34633063657" target="_blank" rel="noopener" class="contact-item"><span>WhatsApp</span>Escríbenos</a>
+        <a href="tel:+34633063657" class="contact-item"><span data-i18n="inicio.contacto.telefono">Teléfono</span>633 06 36 57</a>
+        <a href="https://wa.me/34633063657" target="_blank" rel="noopener" class="contact-item" data-i18n-html="inicio.contacto.whatsapp"><span>WhatsApp</span>Escríbenos</a>
         <a href="https://www.instagram.com/stuntdriveschool/" target="_blank" rel="noopener" class="contact-item"><span>Instagram</span>@stuntdriveschool</a>
         <a href="https://www.youtube.com/user/Tyreaction/videos" target="_blank" rel="noopener" class="contact-item"><span>YouTube</span>TyreAction</a>
-        <a href="https://maps.google.com/?q=FAST+Parcmotor+Castellol%C3%AD" target="_blank" rel="noopener" class="contact-item"><span>Dónde</span>FAST Parcmotor</a>
+        <a href="https://maps.google.com/?q=FAST+Parcmotor+Castellol%C3%AD" target="_blank" rel="noopener" class="contact-item"><span data-i18n="inicio.contacto.donde">Dónde</span>FAST Parcmotor</a>
       </div>
       <p class="contact-address">FAST Parcmotor · Carretera N-II, km 560 · 08719 Castellolí (Barcelona)</p>
     </div>
   </section>
 
   <section class="more-services" id="mas-servicios">
-    <p class="more-label">Más servicios</p>
+    <p class="more-label" data-i18n="inicio.mas.label">Más servicios</p>
     <div class="more-grid">
       <a href="https://orioltarrida.com/" target="_blank" rel="noopener" class="more-item">
         <img src="assets/brand/oriol-tarrida-logo.png" alt="Oriol Tarrida" loading="lazy">
         <span class="more-name">Oriol Tarrida</span>
-        <span class="more-desc">Coordinador de acción</span>
+        <span class="more-desc" data-i18n="inicio.mas.oriol">Coordinador de acción</span>
       </a>
       <a href="https://tyreaction.com/" target="_blank" rel="noopener" class="more-item">
         <img src="assets/brand/tyreaction-logo.png" alt="TyreAction" loading="lazy">
         <span class="more-name">TyreAction</span>
-        <span class="more-desc">Vehículos y servicios de automoción para cine</span>
+        <span class="more-desc" data-i18n="inicio.mas.tyreaction">Vehículos y servicios de automoción para cine</span>
       </a>
     </div>
   </section>
@@ -325,9 +331,9 @@ Siente la adrenalina de una persecución de cine con la máxima seguridad.</p>
 
 <footer class="site-footer">
   <img src="assets/brand/stuntdriveschool-logo.png" width="1063" height="301" alt="Stunt Drive School" class="footer-logo" style="height:auto;width:min(420px,80vw)" loading="lazy">
-  <p>© <span id="year">2026</span> <span class="pie-marca" id="pieMarca" data-admin="https://stuntdriveschool-registro.tail077ef1.ts.net/admin">Stunt Drive School</span> · <a href="privacidad.html">Política de privacidad</a></p>
+  <p>© <span id="year">2026</span> <span class="pie-marca" id="pieMarca" data-admin="https://stuntdriveschool-registro.tail077ef1.ts.net/admin">Stunt Drive School</span> · <a href="privacidad.html" data-i18n="comun.privacidad">Política de privacidad</a></p>
 </footer>
 
-<script src="js/main.js?v=6"></script>
+<script src="js/main.js?v=7"></script>
 </body>
 </html>
