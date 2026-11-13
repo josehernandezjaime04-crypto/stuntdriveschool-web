@@ -682,3 +682,37 @@ main section[id]{scroll-margin-top:72px;}
   .curso-cifras span{letter-spacing:0.12em;font-size:0.6rem;}
   .curso-cifras b{font-size:1.8rem;}
 }
+
+/* ---------- Idiomas ---------- */
+/* mientras se carga el diccionario (solo si el idioma no es el castellano) no se pinta la página: sin parpadeo */
+html.i18n-cargando body{visibility:hidden;}
+.lang-switch{display:flex;align-items:center;gap:2px;}
+.lang-switch button{
+  font:inherit;font-size:0.72rem;font-weight:600;letter-spacing:0.12em;line-height:1;
+  color:var(--cream-dim);background:none;border:1px solid transparent;border-radius:2px;
+  padding:6px 7px;cursor:pointer;transition:color .2s ease,border-color .2s ease;
+}
+.lang-switch button:hover{color:var(--cream);}
+.lang-switch button[aria-pressed="true"]{color:var(--cream);border-color:var(--red);}
+.lang-switch button:focus-visible{outline:2px solid var(--red);outline-offset:2px;}
+.header-extra{display:flex;align-items:center;gap:16px;}
+@media (min-width: 901px) and (max-width: 1000px){
+  .logo-img{height:64px;}
+  .lang-switch button{padding:5px 4px;font-size:0.66rem;letter-spacing:0.08em;}
+}
+@media (max-width: 900px){
+  /* por encima del menú desplegado, como el botón de menú */
+  .lang-switch{position:relative;z-index:101;}
+}
+@media (max-width: 600px){
+  .header-actions,.header-extra{gap:10px;}
+  .lang-switch button{padding:5px 4px;font-size:0.66rem;letter-spacing:0.08em;}
+}
+@media (max-width: 420px){
+  .header-inner{padding-left:16px;padding-right:16px;}
+  .logo-img{height:54px;}
+  .site-header.scrolled .logo-img{height:46px;}
+}
+@media (max-width: 340px){
+  .logo-img,.site-header.scrolled .logo-img{height:44px;}
+}
